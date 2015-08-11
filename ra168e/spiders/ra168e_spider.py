@@ -61,14 +61,14 @@ def construct_odi_url (year, make, model, model_id):
 
 class iihs (scrapy.Spider):
 	name='iihs'
-	json_path = '/Users/bski/Project/image_training/ra168e/ra168e/json/'
+	json_path = '/Users/bski/Project/image_training/ra168e/ra168e/json/iihs/'
 	base_url = 'http://www.iihs.org'
 
 	def parse_entries(self, response, key_xpath, value_xpath):
 		kv_list = []
 		try:
-			keys = list(set(response.xpath (key_xpath)))
-			values = list(set(response.xpath (value_xpath)))
+			keys = list(set(response.xpath (key_xpath).extract()))
+			values = list(set(response.xpath (value_xpath).extract()))
 			for kv in zip (keys, values):
 				entry = safety_entry()
 				entry['name'] = kv[0]
@@ -81,7 +81,7 @@ class iihs (scrapy.Spider):
 
 	def start_requests(self):
 		request_list = []
-		src_list = list(set(pickle.load (open(json_path + 'iihs_urls.p'))))
+		src_list = list(set(pickle.load (open(self.json_path + 'iihs_urls.p'))))
 		for url in src_list:
 			request_list.append (scrapy.Request (self.base_url + url, callback=self.parse_year_urls, dont_filter=True))
 		return request_list
@@ -91,11 +91,11 @@ class iihs (scrapy.Spider):
 		for x in links_by_year:
 			yield scrapy.Request (self.base_url + x, callback=self.parse_page, dont_filter=True)
 
-	def parse_page (self):
+	def parse_page (self, response):
 		safety_doc = safety()
 		try:
-			car_name = response.xpath ('//h1[contains(@class, "main-caption")]/text()').extract()[0]
-			safety_doc['name'] = re.sub (r'\d+', '', car_name).strip()
+			safety_doc['name'] = response.xpath ('//h1[contains(@class, "main-caption")]/text()').extract()[0]
+
 			safety_doc['ratings'] = self.parse_entries (response,
 														'//ul[contains(@class, "rating-list")]/li/div[contains(@class, "rating-caption")]/text()',
 														'//ul[contains(@class, "rating-list")]/li/div[contains(@class, "rating-icon")]/div/span/@title')

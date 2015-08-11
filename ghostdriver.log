@@ -1,0 +1,146 @@
+[INFO  - 2015-08-11T09:49:54.911Z] GhostDriver - Main - running on port 56349
+[INFO  - 2015-08-11T09:49:55.622Z] Session [521f2200-400e-11e5-a191-3537c9a8fe27] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.0.0 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2015-08-11T09:49:55.622Z] Session [521f2200-400e-11e5-a191-3537c9a8fe27] - page.customHeaders:  - {}
+[INFO  - 2015-08-11T09:49:55.623Z] Session [521f2200-400e-11e5-a191-3537c9a8fe27] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.0.0","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-10.9 (Mavericks)-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2015-08-11T09:49:55.623Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 521f2200-400e-11e5-a191-3537c9a8fe27
+[ERROR - 2015-08-11T09:54:17.020Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439286856983
+
+  :262 in error
+[ERROR - 2015-08-11T09:54:17.336Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439286857309
+
+  :262 in error
+[ERROR - 2015-08-11T09:54:17.600Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439286857570
+
+  :262 in error
+[ERROR - 2015-08-11T09:54:24.203Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439286864170
+
+  :262 in error
+[ERROR - 2015-08-11T09:54:24.471Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439286864436
+
+  :262 in error
+[ERROR - 2015-08-11T09:54:24.739Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439286864705
+
+  :262 in error
+[INFO  - 2015-08-11T09:54:54.905Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-11T09:59:56.152Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-11T10:04:56.147Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-08-11T10:07:45.208Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439287665204
+
+  :262 in error
+[ERROR - 2015-08-11T10:07:45.497Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439287665464
+
+  :262 in error
+[ERROR - 2015-08-11T10:07:45.757Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439287665731
+
+  :262 in error
+[INFO  - 2015-08-11T10:09:56.138Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-11T10:14:56.133Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-11T10:19:56.175Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-08-11T10:23:46.908Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288626879
+
+  :262 in error
+[ERROR - 2015-08-11T10:23:47.188Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288627165
+
+  :262 in error
+[ERROR - 2015-08-11T10:23:47.451Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288627421
+
+  :262 in error
+[ERROR - 2015-08-11T10:23:59.301Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288639272
+
+  :262 in error
+[ERROR - 2015-08-11T10:23:59.571Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288639537
+
+  :262 in error
+[ERROR - 2015-08-11T10:23:59.810Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288639804
+
+  :262 in error
+[ERROR - 2015-08-11T10:24:06.510Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288646475
+
+  :262 in error
+[ERROR - 2015-08-11T10:24:06.799Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288646766
+
+  :262 in error
+[ERROR - 2015-08-11T10:24:07.075Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288647033
+
+  :262 in error
+[ERROR - 2015-08-11T10:24:12.579Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288652557
+
+  :262 in error
+[ERROR - 2015-08-11T10:24:12.848Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288652818
+
+  :262 in error
+[ERROR - 2015-08-11T10:24:13.116Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439288653087
+
+  :262 in error
+[INFO  - 2015-08-11T10:24:56.139Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-11T10:29:56.133Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-11T10:34:56.125Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-08-11T10:40:20.991Z] Session [521f2200-400e-11e5-a191-3537c9a8fe27] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'a(m.escId(p)).formSerialize()')
+
+  :262 in error
+[ERROR - 2015-08-11T10:40:20.991Z] Session [521f2200-400e-11e5-a191-3537c9a8fe27] - page.onError - stack:
+  (anonymous function) (http://www-odi.nhtsa.dot.gov/owners/struts/js/struts2/jquery.struts2-3.3.3.min.js:18)
+  each (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:2)
+  (anonymous function) (http://www-odi.nhtsa.dot.gov/owners/struts/js/struts2/jquery.struts2-3.3.3.min.js:18)
+  dispatch (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:3)
+  i (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:3)
+  trigger (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:3)
+  (anonymous function) (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:3)
+  each (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:2)
+  each (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:2)
+  trigger (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:3)
+  (anonymous function) (http://www-odi.nhtsa.dot.gov/owners/struts/js/plugins/jquery.subscribe.min.js:16)
+  each (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:2)
+  publish (http://www-odi.nhtsa.dot.gov/owners/struts/js/plugins/jquery.subscribe.min.js:16)
+  select (http://www-odi.nhtsa.dot.gov/owners/struts/js/struts2/jquery.struts2-3.3.3.min.js:18)
+  bind (http://www-odi.nhtsa.dot.gov/owners/struts/js/struts2/jquery.struts2-3.3.3.min.js:18)
+  (anonymous function) (http://www-odi.nhtsa.dot.gov/owners/SearchResults?prodType=V&searchType=PROD&targetCategory=A&searchCriteria.model=BEETLE&searchCriteria.model_yr=2014&searchCriteria.make=VOLKSWAGEN&searchCriteria.prod_ids=1927937:674)
+  o (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:2)
+  fireWith (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:2)
+  ready (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:2)
+  B (http://www-odi.nhtsa.dot.gov/owners/struts/js/base/jquery-1.7.2.min.js:2)
+
+  :262 in error
+[INFO  - 2015-08-11T10:40:21.032Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-11T10:45:20.984Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-11T10:50:20.976Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-11T10:55:20.982Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-08-11T10:56:06.017Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290565981
+
+  :262 in error
+[ERROR - 2015-08-11T10:56:06.313Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290566273
+
+  :262 in error
+[ERROR - 2015-08-11T10:56:06.576Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290566547
+
+  :262 in error
+[ERROR - 2015-08-11T10:56:13.416Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290573383
+
+  :262 in error
+[ERROR - 2015-08-11T10:56:13.680Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290573650
+
+  :262 in error
+[ERROR - 2015-08-11T10:56:13.930Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290573914
+
+  :262 in error
+[ERROR - 2015-08-11T10:56:18.202Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290578169
+
+  :262 in error
+[ERROR - 2015-08-11T10:56:18.470Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290578436
+
+  :262 in error
+[ERROR - 2015-08-11T10:56:18.734Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290578704
+
+  :262 in error
+[ERROR - 2015-08-11T10:56:35.234Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290595197
+
+  :262 in error
+[ERROR - 2015-08-11T10:56:35.520Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290595493
+
+  :262 in error
+[ERROR - 2015-08-11T10:56:35.790Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1439290595755
+
+  :262 in error
+] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-11T10:56:36.286Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-11T11:01:36.278Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
