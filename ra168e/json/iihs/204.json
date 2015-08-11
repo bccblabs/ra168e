@@ -1,0 +1,50 @@
+{"Makes":[{"DisplayValue":"Acura","Value":186},{"DisplayValue":"Audi","Value":187},{"DisplayValue":"BMW"
+,"Value":188},{"DisplayValue":"Buick","Value":189},{"DisplayValue":"Cadillac","Value":190},{"DisplayValue"
+:"Chevrolet","Value":191},{"DisplayValue":"Chrysler","Value":192},{"DisplayValue":"Daewoo","Value":193
+},{"DisplayValue":"Dodge","Value":194},{"DisplayValue":"Fiat","Value":244},{"DisplayValue":"Ford","Value"
+:195},{"DisplayValue":"GMC","Value":225},{"DisplayValue":"Honda","Value":196},{"DisplayValue":"Hummer"
+,"Value":234},{"DisplayValue":"Hyundai","Value":197},{"DisplayValue":"Infiniti","Value":198},{"DisplayValue"
+:"Isuzu","Value":199},{"DisplayValue":"Jaguar","Value":200},{"DisplayValue":"Jeep","Value":201},{"DisplayValue"
+:"Kia","Value":202},{"DisplayValue":"Land Rover","Value":203},{"DisplayValue":"Lexus","Value":204},{"DisplayValue"
+:"Lincoln","Value":205},{"DisplayValue":"Maserati","Value":251},{"DisplayValue":"Mazda","Value":206}
+,{"DisplayValue":"Mercedes","Value":207},{"DisplayValue":"Mercury","Value":208},{"DisplayValue":"Mini"
+,"Value":209},{"DisplayValue":"Mitsubishi","Value":210},{"DisplayValue":"Nissan","Value":211},{"DisplayValue"
+:"Oldsmobile","Value":212},{"DisplayValue":"Plymouth","Value":213},{"DisplayValue":"Pontiac","Value"
+:214},{"DisplayValue":"Saab","Value":215},{"DisplayValue":"Saturn","Value":216},{"DisplayValue":"Scion"
+,"Value":233},{"DisplayValue":"Smart","Value":236},{"DisplayValue":"Subaru","Value":217},{"DisplayValue"
+:"Suzuki","Value":218},{"DisplayValue":"Toyota","Value":219},{"DisplayValue":"Volkswagen","Value":220
+},{"DisplayValue":"Volvo","Value":221}],"Series":[{"DisplayValue":"CT 200h","Value":{"SeriesId":920,"VariantTypeName"
+:"4-door hatchback","DisplayText":"CT 200h","ActionUrl":"/iihs/ratings/vehicle/v/lexus/ct-200h-4-door-hatchback"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"ES 300","Value":{"SeriesId":321,"VariantTypeName"
+:"4-door sedan","DisplayText":"ES 300","ActionUrl":"/iihs/ratings/vehicle/v/lexus/es-300-4-door-sedan"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"ES 330","Value":{"SeriesId":465,"VariantTypeName"
+:"4-door sedan","DisplayText":"ES 330","ActionUrl":"/iihs/ratings/vehicle/v/lexus/es-330-4-door-sedan"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"ES 350","Value":{"SeriesId":593,"VariantTypeName"
+:"4-door sedan","DisplayText":"ES 350","ActionUrl":"/iihs/ratings/vehicle/v/lexus/es-350-4-door-sedan"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"GS","Value":{"SeriesId":346,"VariantTypeName":"4-door
+ sedan","DisplayText":"GS","ActionUrl":"/iihs/ratings/vehicle/v/lexus/gs-4-door-sedan","Selected":false
+,"IconPath":null}},{"DisplayValue":"GX 460","Value":{"SeriesId":927,"VariantTypeName":"4-door SUV","DisplayText"
+:"GX 460","ActionUrl":"/iihs/ratings/vehicle/v/lexus/gx-460-4-door-suv","Selected":false,"IconPath":null
+}},{"DisplayValue":"GX 470","Value":{"SeriesId":478,"VariantTypeName":"4-door SUV","DisplayText":"GX
+ 470","ActionUrl":"/iihs/ratings/vehicle/v/lexus/gx-470-4-door-suv","Selected":false,"IconPath":null
+}},{"DisplayValue":"HS 250h","Value":{"SeriesId":774,"VariantTypeName":"4-door sedan","DisplayText":"HS
+ 250h","ActionUrl":"/iihs/ratings/vehicle/v/lexus/hs-250h-4-door-sedan","Selected":false,"IconPath":null
+}},{"DisplayValue":"IS","Value":{"SeriesId":840,"VariantTypeName":"4-door sedan","DisplayText":"IS","ActionUrl"
+:"/iihs/ratings/vehicle/v/lexus/is-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"IS
+ 250/350","Value":{"SeriesId":615,"VariantTypeName":"4-door sedan","DisplayText":"IS 250/350","ActionUrl"
+:"/iihs/ratings/vehicle/v/lexus/is-250-350-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue"
+:"IS 300","Value":{"SeriesId":351,"VariantTypeName":"4-door sedan","DisplayText":"IS 300","ActionUrl"
+:"/iihs/ratings/vehicle/v/lexus/is-300-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue"
+:"LS","Value":{"SeriesId":365,"VariantTypeName":"4-door sedan","DisplayText":"LS","ActionUrl":"/iihs
+/ratings/vehicle/v/lexus/ls-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"LS 400"
+,"Value":{"SeriesId":519,"VariantTypeName":"4-door sedan","DisplayText":"LS 400","ActionUrl":"/iihs/ratings
+/vehicle/v/lexus/ls-400-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"LS 430","Value"
+:{"SeriesId":466,"VariantTypeName":"4-door sedan","DisplayText":"LS 430","ActionUrl":"/iihs/ratings/vehicle
+/v/lexus/ls-430-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"NX","Value":{"SeriesId"
+:1038,"VariantTypeName":"4-door SUV","DisplayText":"NX","ActionUrl":"/iihs/ratings/vehicle/v/lexus/nx-4-door-suv"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"RC","Value":{"SeriesId":1037,"VariantTypeName":"2-door
+ coupe","DisplayText":"RC","ActionUrl":"/iihs/ratings/vehicle/v/lexus/rc-2-door-coupe","Selected":false
+,"IconPath":null}},{"DisplayValue":"RX","Value":{"SeriesId":719,"VariantTypeName":"4-door SUV","DisplayText"
+:"RX","ActionUrl":"/iihs/ratings/vehicle/v/lexus/rx-4-door-suv","Selected":false,"IconPath":null}}],"SelectedMakeId"
+:204,"SelectedSeriesId":0,"SelectedMakeName":"Lexus","SelectedSeriesName":"MODEL","SelectedVariantTypeName"
+:"","SelectedMakeNameSlug":"lexus","IsSeriesLookupEnabled":true}

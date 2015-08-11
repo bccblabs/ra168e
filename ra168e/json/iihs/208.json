@@ -1,0 +1,38 @@
+{"Makes":[{"DisplayValue":"Acura","Value":186},{"DisplayValue":"Audi","Value":187},{"DisplayValue":"BMW"
+,"Value":188},{"DisplayValue":"Buick","Value":189},{"DisplayValue":"Cadillac","Value":190},{"DisplayValue"
+:"Chevrolet","Value":191},{"DisplayValue":"Chrysler","Value":192},{"DisplayValue":"Daewoo","Value":193
+},{"DisplayValue":"Dodge","Value":194},{"DisplayValue":"Fiat","Value":244},{"DisplayValue":"Ford","Value"
+:195},{"DisplayValue":"GMC","Value":225},{"DisplayValue":"Honda","Value":196},{"DisplayValue":"Hummer"
+,"Value":234},{"DisplayValue":"Hyundai","Value":197},{"DisplayValue":"Infiniti","Value":198},{"DisplayValue"
+:"Isuzu","Value":199},{"DisplayValue":"Jaguar","Value":200},{"DisplayValue":"Jeep","Value":201},{"DisplayValue"
+:"Kia","Value":202},{"DisplayValue":"Land Rover","Value":203},{"DisplayValue":"Lexus","Value":204},{"DisplayValue"
+:"Lincoln","Value":205},{"DisplayValue":"Maserati","Value":251},{"DisplayValue":"Mazda","Value":206}
+,{"DisplayValue":"Mercedes","Value":207},{"DisplayValue":"Mercury","Value":208},{"DisplayValue":"Mini"
+,"Value":209},{"DisplayValue":"Mitsubishi","Value":210},{"DisplayValue":"Nissan","Value":211},{"DisplayValue"
+:"Oldsmobile","Value":212},{"DisplayValue":"Plymouth","Value":213},{"DisplayValue":"Pontiac","Value"
+:214},{"DisplayValue":"Saab","Value":215},{"DisplayValue":"Saturn","Value":216},{"DisplayValue":"Scion"
+,"Value":233},{"DisplayValue":"Smart","Value":236},{"DisplayValue":"Subaru","Value":217},{"DisplayValue"
+:"Suzuki","Value":218},{"DisplayValue":"Toyota","Value":219},{"DisplayValue":"Volkswagen","Value":220
+},{"DisplayValue":"Volvo","Value":221}],"Series":[{"DisplayValue":"Grand Marquis","Value":{"SeriesId"
+:342,"VariantTypeName":"4-door sedan","DisplayText":"Grand Marquis","ActionUrl":"/iihs/ratings/vehicle
+/v/mercury/grand-marquis-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"Mariner","Value"
+:{"SeriesId":509,"VariantTypeName":"4-door SUV","DisplayText":"Mariner","ActionUrl":"/iihs/ratings/vehicle
+/v/mercury/mariner-4-door-suv","Selected":false,"IconPath":null}},{"DisplayValue":"Milan","Value":{"SeriesId"
+:628,"VariantTypeName":"4-door sedan","DisplayText":"Milan","ActionUrl":"/iihs/ratings/vehicle/v/mercury
+/milan-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"Montego","Value":{"SeriesId"
+:631,"VariantTypeName":"4-door sedan","DisplayText":"Montego","ActionUrl":"/iihs/ratings/vehicle/v/mercury
+/montego-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"Monterey","Value":{"SeriesId"
+:488,"VariantTypeName":"Minivan","DisplayText":"Monterey","ActionUrl":"/iihs/ratings/vehicle/v/mercury
+/monterey-minivan","Selected":false,"IconPath":null}},{"DisplayValue":"Mountaineer","Value":{"SeriesId"
+:495,"VariantTypeName":"4-door SUV","DisplayText":"Mountaineer","ActionUrl":"/iihs/ratings/vehicle/v
+/mercury/mountaineer-4-door-suv","Selected":false,"IconPath":null}},{"DisplayValue":"Mystique","Value"
+:{"SeriesId":515,"VariantTypeName":"4-door sedan","DisplayText":"Mystique","ActionUrl":"/iihs/ratings
+/vehicle/v/mercury/mystique-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"Sable"
+,"Value":{"SeriesId":414,"VariantTypeName":"4-door sedan","DisplayText":"Sable","ActionUrl":"/iihs/ratings
+/vehicle/v/mercury/sable-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"Tracer","Value"
+:{"SeriesId":483,"VariantTypeName":"4-door sedan","DisplayText":"Tracer","ActionUrl":"/iihs/ratings/vehicle
+/v/mercury/tracer-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"Villager","Value"
+:{"SeriesId":493,"VariantTypeName":"Minivan","DisplayText":"Villager","ActionUrl":"/iihs/ratings/vehicle
+/v/mercury/villager-minivan","Selected":false,"IconPath":null}}],"SelectedMakeId":208,"SelectedSeriesId"
+:0,"SelectedMakeName":"Mercury","SelectedSeriesName":"MODEL","SelectedVariantTypeName":"","SelectedMakeNameSlug"
+:"mercury","IsSeriesLookupEnabled":true}

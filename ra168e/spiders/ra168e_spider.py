@@ -1,11 +1,13 @@
-import scrapy, re
-from itertools import product
-from ra168e.items import vehicle_urls
-import os
+import scrapy, re, os, json, pickle
+from itertools import product, izip
+from ra168e.items import vehicle_urls, zero_sixty, issues, entry, safety, safety_entry
 from pymongo import MongoClient
+from selenium import webdriver
 
-mongo_host_name = os.environ['VEHICLE_DATA_PORT_27017_TCP_ADDR']
-mongo_port = int(os.environ['VEHICLE_DATA_PORT_27017_TCP_PORT'])
+# mongo_host_name = os.environ['VEHICLE_DATA_PORT_27017_TCP_ADDR']
+# mongo_port = int(os.environ['VEHICLE_DATA_PORT_27017_TCP_PORT'])
+mongo_host_name = 'localhost'
+mongo_port = 27017
 
 client = MongoClient(mongo_host_name, mongo_port)
 
@@ -15,13 +17,34 @@ model_stats_coll = model_stats_db.urls
 uploaded_db = client['upload_set']
 uploaded_coll = uploaded_db.uploaded
 
-import pickle
+vehicle_data_db = client['vehicle_data']
+issues_collection = vehicle_data_db.issues
 
+issues_vehicles_list = issues_collection.distinct ('name')
+
+global makes
 global urls_list
 urls_list = model_stats_coll.distinct ('listing_url')
-global makes
 
-makes = [u'aston--martin', u'audi', u'bentley', u'bmw', u'bugatti', u'cadillac', u'ferrari', u'infiniti', u'jaguar', u'lamborghini', u'land--rover', u'lexus', u'lotus', u'maserati', u'mclaren', u'mercedes-benz', u'porsche', u'rolls-royce'
+makes = [
+u'aston--martin',
+u'audi',
+u'bentley',
+u'bmw',
+u'bugatti',
+u'cadillac',
+u'ferrari',
+u'infiniti',
+u'jaguar',
+u'lamborghini',
+u'land--rover',
+u'lexus',
+u'lotus',
+u'maserati',
+u'mclaren',
+u'mercedes-benz',
+u'porsche',
+u'rolls-royce'
 ]
 
 def isfloat(value):
@@ -30,6 +53,147 @@ def isfloat(value):
     return True
   except ValueError:
     return False
+
+def construct_odi_url (year, make, model, model_id):
+	url = "http://www-odi.nhtsa.dot.gov/owners/SearchResults?prodType=V&searchType=PROD&targetCategory=A&searchCriteria.model=%s&searchCriteria.model_yr=%s&searchCriteria.make=%s&searchCriteria.prod_ids=%s" %(model, year, make, model_id)
+	return url
+
+
+class iihs (scrapy.Spider):
+	name='iihs'
+	json_path = '/Users/bski/Project/image_training/ra168e/ra168e/json/'
+	base_url = 'http://www.iihs.org'
+
+	def parse_entries(self, response, key_xpath, value_xpath):
+		kv_list = []
+		try:
+			keys = list(set(response.xpath (key_xpath)))
+			values = list(set(response.xpath (value_xpath)))
+			for kv in zip (keys, values):
+				entry = safety_entry()
+				entry['name'] = kv[0]
+				entry['value'] = kv[1]
+				kv_list.append (entry)
+		except:
+			pass
+
+		return kv_list
+
+	def start_requests(self):
+		request_list = []
+		src_list = list(set(pickle.load (open(json_path + 'iihs_urls.p'))))
+		for url in src_list:
+			request_list.append (scrapy.Request (self.base_url + url, callback=self.parse_year_urls, dont_filter=True))
+		return request_list
+
+	def parse_year_urls(self, response):
+		links_by_year = response.xpath('//div[contains(@class, "dropdown year-dropdown")]/ul/li/a/@href').extract()
+		for x in links_by_year:
+			yield scrapy.Request (self.base_url + x, callback=self.parse_page, dont_filter=True)
+
+	def parse_page (self):
+		safety_doc = safety()
+		try:
+			car_name = response.xpath ('//h1[contains(@class, "main-caption")]/text()').extract()[0]
+			safety_doc['name'] = re.sub (r'\d+', '', car_name).strip()
+			safety_doc['ratings'] = self.parse_entries (response,
+														'//ul[contains(@class, "rating-list")]/li/div[contains(@class, "rating-caption")]/text()',
+														'//ul[contains(@class, "rating-list")]/li/div[contains(@class, "rating-icon")]/div/span/@title')
+			safety_doc['videos'] = self.parse_entries (	response,
+														'//a[contains(@class, "play-vid")]/text()',
+														'//a[contains(@class, "play-vid")]/@data-videoid')
+			safety_doc['photos'] = self.parse_entries (	response,
+														'//a[contains(@class, "vehicle-image-thumbnail")]/div/strong/text()',
+														'//a[contains(@class, "vehicle-image-thumbnail")]/img/@src')
+			safety_doc['equipments'] = response.xpath ('//div[contains(@class, "feature-value")]/text()').extract()
+		except:
+			pass
+		return safety_doc
+
+class odi (scrapy.Spider):
+	name = "odi"
+	json_path = '/Users/bski/Project/image_training/ra168e/ra168e/json/'
+	def __init__ (self, file_name):
+		self.json_file_name = file_name
+		self.driver = webdriver.PhantomJS()		
+
+	def parse_stats(self, btn_selector_string, stats_selector_string):
+		items_list = []
+		try:
+			div_btn = self.driver.find_element_by_xpath (btn_selector_string)
+			div_btn.click()
+			div_text = [x.text for x in self.driver.find_elements_by_xpath (stats_selector_string)]
+			for text in div_text:
+				if "All" not in text:
+					try:
+						stats_item = entry()	
+						stats_item['component'] = text[0:text.find("(")].strip().lower()
+						stats_item['count'] = int (re.findall (r'\d+', text)[0])
+						items_list.append (stats_item)
+					except:
+						pass
+		except:
+			pass
+		return items_list
+
+	def start_requests(self):
+		request_list = []
+		data = {}
+		with open (self.json_path + self.json_file_name) as f:
+			data = json.load (f)
+		for item in data.items():
+			for years in item[1]:
+				year = years['Y']
+				for makes in years['makes']:
+					make = makes['m']
+					for model in makes['models']:
+						issue_item = issues()
+						model_name = model['o']
+						mid_string = model['s']
+						mid, recalls, investigations, complaints, tsbs = mid_string.split (",") 
+						issue_item['name'] = "%s %s %s" %(year, make, model_name)
+						issue_item['recalls_cnt'] = int (recalls)
+						issue_item['investigations_cnt'] = int (investigations)
+						issue_item['complaints_cnt'] = int (complaints)
+						issue_item['tsbs_cnt'] = int (tsbs)
+						if issue_item['name'] not in issues_vehicles_list:
+							request = scrapy.Request (construct_odi_url (year, make, model_name, mid), callback=self.parse_page)
+							request.meta['issue_item'] = issue_item
+							request_list.append (request)
+		return request_list
+
+	def parse_page (self, response):
+		issue_item = response.meta['issue_item']
+		try:
+			self.driver.get (response.url)
+			issue_item['recall_stats'] = self.parse_stats ('//a[@id="recalls-tab"]', '//select[@id="component_det_rcl"]/option')
+			issue_item['investigation_stats'] = self.parse_stats ('//a[@id="investigations-tab"]', '//select[@id="component_det_inv"]/option')
+			issue_item['complain_stats'] = self.parse_stats ('//a[@id="complaints-tab"]', '//select[@id="component_det_cmpl"]/option')
+		except:
+			pass
+		return issue_item
+
+class zs (scrapy.Spider):
+	name='zs'
+	makes_urls = []
+	def __init__(self, makes_p):
+		self.makes_urls = list(set(pickle.load (open (makes_p, 'rb'))))
+
+	def start_requests(self):
+		request_list = []
+		for x in self.makes_urls:
+			request_list.append (scrapy.Request (x, callback=self.parse_zs))
+		return request_list
+
+	def parse_zs(self, response):
+		times = [x.strip() for x in response.xpath('//div[contains(@class, "accordion opened")]/div/div/span[contains(@class, "statTimes")]/text()').extract()]		
+		zs = [float (str(x.replace ("0-60 mph ", "").replace("0-60 To Be Released", "-1.0"))) for x in times if "0-60" in x]
+		titles = [x.strip().replace('(', '').replace(')', '') for x in response.xpath('//span[contains(@class, "statTitle")]/text()').extract()]
+		for x in izip (titles, zs):		
+			scrapped_item = zero_sixty()
+			scrapped_item['name'] = x[0].lower()
+			scrapped_item['zs'] = x[1]
+			yield scrapped_item
 
 class dupont_spider (scrapy.Spider):
 	name='dupont'

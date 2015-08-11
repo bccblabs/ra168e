@@ -1,0 +1,22 @@
+{"Makes":[{"DisplayValue":"Acura","Value":186},{"DisplayValue":"Audi","Value":187},{"DisplayValue":"BMW"
+,"Value":188},{"DisplayValue":"Buick","Value":189},{"DisplayValue":"Cadillac","Value":190},{"DisplayValue"
+:"Chevrolet","Value":191},{"DisplayValue":"Chrysler","Value":192},{"DisplayValue":"Daewoo","Value":193
+},{"DisplayValue":"Dodge","Value":194},{"DisplayValue":"Fiat","Value":244},{"DisplayValue":"Ford","Value"
+:195},{"DisplayValue":"GMC","Value":225},{"DisplayValue":"Honda","Value":196},{"DisplayValue":"Hummer"
+,"Value":234},{"DisplayValue":"Hyundai","Value":197},{"DisplayValue":"Infiniti","Value":198},{"DisplayValue"
+:"Isuzu","Value":199},{"DisplayValue":"Jaguar","Value":200},{"DisplayValue":"Jeep","Value":201},{"DisplayValue"
+:"Kia","Value":202},{"DisplayValue":"Land Rover","Value":203},{"DisplayValue":"Lexus","Value":204},{"DisplayValue"
+:"Lincoln","Value":205},{"DisplayValue":"Maserati","Value":251},{"DisplayValue":"Mazda","Value":206}
+,{"DisplayValue":"Mercedes","Value":207},{"DisplayValue":"Mercury","Value":208},{"DisplayValue":"Mini"
+,"Value":209},{"DisplayValue":"Mitsubishi","Value":210},{"DisplayValue":"Nissan","Value":211},{"DisplayValue"
+:"Oldsmobile","Value":212},{"DisplayValue":"Plymouth","Value":213},{"DisplayValue":"Pontiac","Value"
+:214},{"DisplayValue":"Saab","Value":215},{"DisplayValue":"Saturn","Value":216},{"DisplayValue":"Scion"
+,"Value":233},{"DisplayValue":"Smart","Value":236},{"DisplayValue":"Subaru","Value":217},{"DisplayValue"
+:"Suzuki","Value":218},{"DisplayValue":"Toyota","Value":219},{"DisplayValue":"Volkswagen","Value":220
+},{"DisplayValue":"Volvo","Value":221}],"Series":[{"DisplayValue":"S-type","Value":{"SeriesId":652,"VariantTypeName"
+:"4-door sedan","DisplayText":"S-type","ActionUrl":"/iihs/ratings/vehicle/v/jaguar/s-type-4-door-sedan"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"X-Type","Value":{"SeriesId":450,"VariantTypeName"
+:"4-door sedan","DisplayText":"X-Type","ActionUrl":"/iihs/ratings/vehicle/v/jaguar/x-type-4-door-sedan"
+,"Selected":false,"IconPath":null}}],"SelectedMakeId":200,"SelectedSeriesId":0,"SelectedMakeName":"Jaguar"
+,"SelectedSeriesName":"MODEL","SelectedVariantTypeName":"","SelectedMakeNameSlug":"jaguar","IsSeriesLookupEnabled"
+:true}

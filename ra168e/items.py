@@ -18,3 +18,34 @@ class vehicle_urls (scrapy.Item):
     restored = scrapy.Field()
     listing_url = scrapy.Field()
 
+
+class zero_sixty (scrapy.Item):
+    name = scrapy.Field()
+    zs = scrapy.Field()
+
+class issues (scrapy.Item):
+    name = scrapy.Field()
+
+    recalls_cnt = scrapy.Field()
+    investigations_cnt = scrapy.Field()
+    complaints_cnt = scrapy.Field()
+    tsbs_cnt = scrapy.Field()
+
+    recall_stats = scrapy.Field()
+    investigation_stats = scrapy.Field()
+    complain_stats = scrapy.Field()
+
+class entry (scrapy.Item):
+    component = scrapy.Field()
+    count = scrapy.Field()
+
+class safety_entry (scrapy.Item):
+    name = scrapy.Field()
+    value = scrapy.Field()
+
+class safety (scrapy.Item):
+    ratings = scrapy.Field()
+    equipments = scrapy.Field()
+    photos = scrapy.Field()
+    videos = scrapy.Field()
+    name = scrapy.Field()

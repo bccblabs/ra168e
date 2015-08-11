@@ -1,0 +1,43 @@
+{"Makes":[{"DisplayValue":"Acura","Value":186},{"DisplayValue":"Audi","Value":187},{"DisplayValue":"BMW"
+,"Value":188},{"DisplayValue":"Buick","Value":189},{"DisplayValue":"Cadillac","Value":190},{"DisplayValue"
+:"Chevrolet","Value":191},{"DisplayValue":"Chrysler","Value":192},{"DisplayValue":"Daewoo","Value":193
+},{"DisplayValue":"Dodge","Value":194},{"DisplayValue":"Fiat","Value":244},{"DisplayValue":"Ford","Value"
+:195},{"DisplayValue":"GMC","Value":225},{"DisplayValue":"Honda","Value":196},{"DisplayValue":"Hummer"
+,"Value":234},{"DisplayValue":"Hyundai","Value":197},{"DisplayValue":"Infiniti","Value":198},{"DisplayValue"
+:"Isuzu","Value":199},{"DisplayValue":"Jaguar","Value":200},{"DisplayValue":"Jeep","Value":201},{"DisplayValue"
+:"Kia","Value":202},{"DisplayValue":"Land Rover","Value":203},{"DisplayValue":"Lexus","Value":204},{"DisplayValue"
+:"Lincoln","Value":205},{"DisplayValue":"Maserati","Value":251},{"DisplayValue":"Mazda","Value":206}
+,{"DisplayValue":"Mercedes","Value":207},{"DisplayValue":"Mercury","Value":208},{"DisplayValue":"Mini"
+,"Value":209},{"DisplayValue":"Mitsubishi","Value":210},{"DisplayValue":"Nissan","Value":211},{"DisplayValue"
+:"Oldsmobile","Value":212},{"DisplayValue":"Plymouth","Value":213},{"DisplayValue":"Pontiac","Value"
+:214},{"DisplayValue":"Saab","Value":215},{"DisplayValue":"Saturn","Value":216},{"DisplayValue":"Scion"
+,"Value":233},{"DisplayValue":"Smart","Value":236},{"DisplayValue":"Subaru","Value":217},{"DisplayValue"
+:"Suzuki","Value":218},{"DisplayValue":"Toyota","Value":219},{"DisplayValue":"Volkswagen","Value":220
+},{"DisplayValue":"Volvo","Value":221}],"Series":[{"DisplayValue":"Acadia","Value":{"SeriesId":738,"VariantTypeName"
+:"4-door SUV","DisplayText":"Acadia","ActionUrl":"/iihs/ratings/vehicle/v/gmc/acadia-4-door-suv","Selected"
+:false,"IconPath":null}},{"DisplayValue":"Canyon","Value":{"SeriesId":575,"VariantTypeName":"Regular
+ cab pickup","DisplayText":"Canyon","ActionUrl":"/iihs/ratings/vehicle/v/gmc/canyon-regular-cab-pickup"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Canyon","Value":{"SeriesId":575,"VariantTypeName"
+:"Extended cab pickup","DisplayText":"Canyon","ActionUrl":"/iihs/ratings/vehicle/v/gmc/canyon-extended-cab-pickup"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Canyon","Value":{"SeriesId":575,"VariantTypeName"
+:"Crew cab pickup","DisplayText":"Canyon","ActionUrl":"/iihs/ratings/vehicle/v/gmc/canyon-crew-cab-pickup"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Envoy","Value":{"SeriesId":496,"VariantTypeName"
+:"4-door SUV","DisplayText":"Envoy","ActionUrl":"/iihs/ratings/vehicle/v/gmc/envoy-4-door-suv","Selected"
+:false,"IconPath":null}},{"DisplayValue":"Jimmy","Value":{"SeriesId":500,"VariantTypeName":"4-door SUV"
+,"DisplayText":"Jimmy","ActionUrl":"/iihs/ratings/vehicle/v/gmc/jimmy-4-door-suv","Selected":false,"IconPath"
+:null}},{"DisplayValue":"Safari","Value":{"SeriesId":490,"VariantTypeName":"Minivan","DisplayText":"Safari"
+,"ActionUrl":"/iihs/ratings/vehicle/v/gmc/safari-minivan","Selected":false,"IconPath":null}},{"DisplayValue"
+:"Sierra 1500","Value":{"SeriesId":510,"VariantTypeName":"Extended cab pickup","DisplayText":"Sierra
+ 1500","ActionUrl":"/iihs/ratings/vehicle/v/gmc/sierra-1500-extended-cab-pickup","Selected":false,"IconPath"
+:null}},{"DisplayValue":"Sierra 1500","Value":{"SeriesId":510,"VariantTypeName":"Crew cab pickup","DisplayText"
+:"Sierra 1500","ActionUrl":"/iihs/ratings/vehicle/v/gmc/sierra-1500-crew-cab-pickup","Selected":false
+,"IconPath":null}},{"DisplayValue":"Sierra 1500 Classic","Value":{"SeriesId":960,"VariantTypeName":"Extended
+ cab pickup","DisplayText":"Sierra 1500 Classic","ActionUrl":"/iihs/ratings/vehicle/v/gmc/sierra-1500-classic-extended-cab-pickup"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Sonoma","Value":{"SeriesId":486,"VariantTypeName"
+:"Regular cab pickup","DisplayText":"Sonoma","ActionUrl":"/iihs/ratings/vehicle/v/gmc/sonoma-regular-cab-pickup"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Terrain","Value":{"SeriesId":903,"VariantTypeName"
+:"4-door SUV","DisplayText":"Terrain","ActionUrl":"/iihs/ratings/vehicle/v/gmc/terrain-4-door-suv","Selected"
+:false,"IconPath":null}},{"DisplayValue":"Yukon XL","Value":{"SeriesId":902,"VariantTypeName":"4-door
+ SUV","DisplayText":"Yukon XL","ActionUrl":"/iihs/ratings/vehicle/v/gmc/yukon-xl-4-door-suv","Selected"
+:false,"IconPath":null}}],"SelectedMakeId":225,"SelectedSeriesId":0,"SelectedMakeName":"GMC","SelectedSeriesName"
+:"MODEL","SelectedVariantTypeName":"","SelectedMakeNameSlug":"gmc","IsSeriesLookupEnabled":true}

@@ -1,0 +1,39 @@
+{"Makes":[{"DisplayValue":"Acura","Value":186},{"DisplayValue":"Audi","Value":187},{"DisplayValue":"BMW"
+,"Value":188},{"DisplayValue":"Buick","Value":189},{"DisplayValue":"Cadillac","Value":190},{"DisplayValue"
+:"Chevrolet","Value":191},{"DisplayValue":"Chrysler","Value":192},{"DisplayValue":"Daewoo","Value":193
+},{"DisplayValue":"Dodge","Value":194},{"DisplayValue":"Fiat","Value":244},{"DisplayValue":"Ford","Value"
+:195},{"DisplayValue":"GMC","Value":225},{"DisplayValue":"Honda","Value":196},{"DisplayValue":"Hummer"
+,"Value":234},{"DisplayValue":"Hyundai","Value":197},{"DisplayValue":"Infiniti","Value":198},{"DisplayValue"
+:"Isuzu","Value":199},{"DisplayValue":"Jaguar","Value":200},{"DisplayValue":"Jeep","Value":201},{"DisplayValue"
+:"Kia","Value":202},{"DisplayValue":"Land Rover","Value":203},{"DisplayValue":"Lexus","Value":204},{"DisplayValue"
+:"Lincoln","Value":205},{"DisplayValue":"Maserati","Value":251},{"DisplayValue":"Mazda","Value":206}
+,{"DisplayValue":"Mercedes","Value":207},{"DisplayValue":"Mercury","Value":208},{"DisplayValue":"Mini"
+,"Value":209},{"DisplayValue":"Mitsubishi","Value":210},{"DisplayValue":"Nissan","Value":211},{"DisplayValue"
+:"Oldsmobile","Value":212},{"DisplayValue":"Plymouth","Value":213},{"DisplayValue":"Pontiac","Value"
+:214},{"DisplayValue":"Saab","Value":215},{"DisplayValue":"Saturn","Value":216},{"DisplayValue":"Scion"
+,"Value":233},{"DisplayValue":"Smart","Value":236},{"DisplayValue":"Subaru","Value":217},{"DisplayValue"
+:"Suzuki","Value":218},{"DisplayValue":"Toyota","Value":219},{"DisplayValue":"Volkswagen","Value":220
+},{"DisplayValue":"Volvo","Value":221}],"Series":[{"DisplayValue":"Aviator","Value":{"SeriesId":467,"VariantTypeName"
+:"4-door SUV","DisplayText":"Aviator","ActionUrl":"/iihs/ratings/vehicle/v/lincoln/aviator-4-door-suv"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Continental","Value":{"SeriesId":301,"VariantTypeName"
+:"4-door sedan","DisplayText":"Continental","ActionUrl":"/iihs/ratings/vehicle/v/lincoln/continental-4-door-sedan"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"LS","Value":{"SeriesId":366,"VariantTypeName":"4-door
+ sedan","DisplayText":"LS","ActionUrl":"/iihs/ratings/vehicle/v/lincoln/ls-4-door-sedan","Selected":false
+,"IconPath":null}},{"DisplayValue":"MKC","Value":{"SeriesId":1065,"VariantTypeName":"4-door SUV","DisplayText"
+:"MKC","ActionUrl":"/iihs/ratings/vehicle/v/lincoln/mkc-4-door-suv","Selected":false,"IconPath":null
+}},{"DisplayValue":"MKS","Value":{"SeriesId":741,"VariantTypeName":"4-door sedan","DisplayText":"MKS"
+,"ActionUrl":"/iihs/ratings/vehicle/v/lincoln/mks-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue"
+:"MKT","Value":{"SeriesId":753,"VariantTypeName":"4-door SUV","DisplayText":"MKT","ActionUrl":"/iihs
+/ratings/vehicle/v/lincoln/mkt-4-door-suv","Selected":false,"IconPath":null}},{"DisplayValue":"MKX","Value"
+:{"SeriesId":714,"VariantTypeName":"4-door SUV","DisplayText":"MKX","ActionUrl":"/iihs/ratings/vehicle
+/v/lincoln/mkx-4-door-suv","Selected":false,"IconPath":null}},{"DisplayValue":"MKZ","Value":{"SeriesId"
+:713,"VariantTypeName":"4-door sedan","DisplayText":"MKZ","ActionUrl":"/iihs/ratings/vehicle/v/lincoln
+/mkz-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"Town Car","Value":{"SeriesId"
+:726,"VariantTypeName":"4-door sedan","DisplayText":"Town Car","ActionUrl":"/iihs/ratings/vehicle/v/lincoln
+/town-car-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"Zephyr","Value":{"SeriesId"
+:548,"VariantTypeName":"4-door sedan","DisplayText":"Zephyr","ActionUrl":"/iihs/ratings/vehicle/v/lincoln
+/zephyr-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"Zephyr/MKZ","Value":{"SeriesId"
+:844,"VariantTypeName":"4-door sedan","DisplayText":"Zephyr/MKZ","ActionUrl":"/iihs/ratings/vehicle/v
+/lincoln/zephyr-mkz-4-door-sedan","Selected":false,"IconPath":null}}],"SelectedMakeId":205,"SelectedSeriesId"
+:0,"SelectedMakeName":"Lincoln","SelectedSeriesName":"MODEL","SelectedVariantTypeName":"","SelectedMakeNameSlug"
+:"lincoln","IsSeriesLookupEnabled":true}

@@ -1,0 +1,53 @@
+{"Makes":[{"DisplayValue":"Acura","Value":186},{"DisplayValue":"Audi","Value":187},{"DisplayValue":"BMW"
+,"Value":188},{"DisplayValue":"Buick","Value":189},{"DisplayValue":"Cadillac","Value":190},{"DisplayValue"
+:"Chevrolet","Value":191},{"DisplayValue":"Chrysler","Value":192},{"DisplayValue":"Daewoo","Value":193
+},{"DisplayValue":"Dodge","Value":194},{"DisplayValue":"Fiat","Value":244},{"DisplayValue":"Ford","Value"
+:195},{"DisplayValue":"GMC","Value":225},{"DisplayValue":"Honda","Value":196},{"DisplayValue":"Hummer"
+,"Value":234},{"DisplayValue":"Hyundai","Value":197},{"DisplayValue":"Infiniti","Value":198},{"DisplayValue"
+:"Isuzu","Value":199},{"DisplayValue":"Jaguar","Value":200},{"DisplayValue":"Jeep","Value":201},{"DisplayValue"
+:"Kia","Value":202},{"DisplayValue":"Land Rover","Value":203},{"DisplayValue":"Lexus","Value":204},{"DisplayValue"
+:"Lincoln","Value":205},{"DisplayValue":"Maserati","Value":251},{"DisplayValue":"Mazda","Value":206}
+,{"DisplayValue":"Mercedes","Value":207},{"DisplayValue":"Mercury","Value":208},{"DisplayValue":"Mini"
+,"Value":209},{"DisplayValue":"Mitsubishi","Value":210},{"DisplayValue":"Nissan","Value":211},{"DisplayValue"
+:"Oldsmobile","Value":212},{"DisplayValue":"Plymouth","Value":213},{"DisplayValue":"Pontiac","Value"
+:214},{"DisplayValue":"Saab","Value":215},{"DisplayValue":"Saturn","Value":216},{"DisplayValue":"Scion"
+,"Value":233},{"DisplayValue":"Smart","Value":236},{"DisplayValue":"Subaru","Value":217},{"DisplayValue"
+:"Suzuki","Value":218},{"DisplayValue":"Toyota","Value":219},{"DisplayValue":"Volkswagen","Value":220
+},{"DisplayValue":"Volvo","Value":221}],"Series":[{"DisplayValue":"Avenger","Value":{"SeriesId":725,"VariantTypeName"
+:"4-door sedan","DisplayText":"Avenger","ActionUrl":"/iihs/ratings/vehicle/v/dodge/avenger-4-door-sedan"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Caliber","Value":{"SeriesId":549,"VariantTypeName"
+:"4-door wagon","DisplayText":"Caliber","ActionUrl":"/iihs/ratings/vehicle/v/dodge/caliber-4-door-wagon"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Charger","Value":{"SeriesId":579,"VariantTypeName"
+:"4-door sedan","DisplayText":"Charger","ActionUrl":"/iihs/ratings/vehicle/v/dodge/charger-4-door-sedan"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Dakota","Value":{"SeriesId":310,"VariantTypeName"
+:"Regular cab pickup","DisplayText":"Dakota","ActionUrl":"/iihs/ratings/vehicle/v/dodge/dakota-regular-cab-pickup"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Dakota","Value":{"SeriesId":310,"VariantTypeName"
+:"Extended cab pickup","DisplayText":"Dakota","ActionUrl":"/iihs/ratings/vehicle/v/dodge/dakota-extended-cab-pickup"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Dakota","Value":{"SeriesId":310,"VariantTypeName"
+:"Crew cab pickup","DisplayText":"Dakota","ActionUrl":"/iihs/ratings/vehicle/v/dodge/dakota-crew-cab-pickup"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Dart","Value":{"SeriesId":994,"VariantTypeName"
+:"4-door sedan","DisplayText":"Dart","ActionUrl":"/iihs/ratings/vehicle/v/dodge/dart-4-door-sedan","Selected"
+:false,"IconPath":null}},{"DisplayValue":"Durango","Value":{"SeriesId":313,"VariantTypeName":"4-door
+ SUV","DisplayText":"Durango","ActionUrl":"/iihs/ratings/vehicle/v/dodge/durango-4-door-suv","Selected"
+:false,"IconPath":null}},{"DisplayValue":"Grand Caravan","Value":{"SeriesId":339,"VariantTypeName":"Minivan"
+,"DisplayText":"Grand Caravan","ActionUrl":"/iihs/ratings/vehicle/v/dodge/grand-caravan-minivan","Selected"
+:false,"IconPath":null}},{"DisplayValue":"Intrepid","Value":{"SeriesId":350,"VariantTypeName":"4-door
+ sedan","DisplayText":"Intrepid","ActionUrl":"/iihs/ratings/vehicle/v/dodge/intrepid-4-door-sedan","Selected"
+:false,"IconPath":null}},{"DisplayValue":"Journey","Value":{"SeriesId":729,"VariantTypeName":"4-door
+ SUV","DisplayText":"Journey","ActionUrl":"/iihs/ratings/vehicle/v/dodge/journey-4-door-suv","Selected"
+:false,"IconPath":null}},{"DisplayValue":"Magnum","Value":{"SeriesId":625,"VariantTypeName":"4-door wagon"
+,"DisplayText":"Magnum","ActionUrl":"/iihs/ratings/vehicle/v/dodge/magnum-4-door-wagon","Selected":false
+,"IconPath":null}},{"DisplayValue":"Neon","Value":{"SeriesId":382,"VariantTypeName":"4-door sedan","DisplayText"
+:"Neon","ActionUrl":"/iihs/ratings/vehicle/v/dodge/neon-4-door-sedan","Selected":false,"IconPath":null
+}},{"DisplayValue":"Nitro","Value":{"SeriesId":816,"VariantTypeName":"4-door SUV","DisplayText":"Nitro"
+,"ActionUrl":"/iihs/ratings/vehicle/v/dodge/nitro-4-door-suv","Selected":false,"IconPath":null}},{"DisplayValue"
+:"Ram 1500","Value":{"SeriesId":401,"VariantTypeName":"Extended cab pickup","DisplayText":"Ram 1500"
+,"ActionUrl":"/iihs/ratings/vehicle/v/dodge/ram-1500-extended-cab-pickup","Selected":false,"IconPath"
+:null}},{"DisplayValue":"Ram 1500","Value":{"SeriesId":401,"VariantTypeName":"Crew cab pickup","DisplayText"
+:"Ram 1500","ActionUrl":"/iihs/ratings/vehicle/v/dodge/ram-1500-crew-cab-pickup","Selected":false,"IconPath"
+:null}},{"DisplayValue":"SRT-4","Value":{"SeriesId":965,"VariantTypeName":"4-door sedan","DisplayText"
+:"SRT-4","ActionUrl":"/iihs/ratings/vehicle/v/dodge/srt-4-4-door-sedan","Selected":false,"IconPath":null
+}},{"DisplayValue":"Stratus","Value":{"SeriesId":432,"VariantTypeName":"4-door sedan","DisplayText":"Stratus"
+,"ActionUrl":"/iihs/ratings/vehicle/v/dodge/stratus-4-door-sedan","Selected":false,"IconPath":null}}
+],"SelectedMakeId":194,"SelectedSeriesId":0,"SelectedMakeName":"Dodge","SelectedSeriesName":"MODEL","SelectedVariantTypeName"
+:"","SelectedMakeNameSlug":"dodge","IsSeriesLookupEnabled":true}

@@ -1,0 +1,46 @@
+{"Makes":[{"DisplayValue":"Acura","Value":186},{"DisplayValue":"Audi","Value":187},{"DisplayValue":"BMW"
+,"Value":188},{"DisplayValue":"Buick","Value":189},{"DisplayValue":"Cadillac","Value":190},{"DisplayValue"
+:"Chevrolet","Value":191},{"DisplayValue":"Chrysler","Value":192},{"DisplayValue":"Daewoo","Value":193
+},{"DisplayValue":"Dodge","Value":194},{"DisplayValue":"Fiat","Value":244},{"DisplayValue":"Ford","Value"
+:195},{"DisplayValue":"GMC","Value":225},{"DisplayValue":"Honda","Value":196},{"DisplayValue":"Hummer"
+,"Value":234},{"DisplayValue":"Hyundai","Value":197},{"DisplayValue":"Infiniti","Value":198},{"DisplayValue"
+:"Isuzu","Value":199},{"DisplayValue":"Jaguar","Value":200},{"DisplayValue":"Jeep","Value":201},{"DisplayValue"
+:"Kia","Value":202},{"DisplayValue":"Land Rover","Value":203},{"DisplayValue":"Lexus","Value":204},{"DisplayValue"
+:"Lincoln","Value":205},{"DisplayValue":"Maserati","Value":251},{"DisplayValue":"Mazda","Value":206}
+,{"DisplayValue":"Mercedes","Value":207},{"DisplayValue":"Mercury","Value":208},{"DisplayValue":"Mini"
+,"Value":209},{"DisplayValue":"Mitsubishi","Value":210},{"DisplayValue":"Nissan","Value":211},{"DisplayValue"
+:"Oldsmobile","Value":212},{"DisplayValue":"Plymouth","Value":213},{"DisplayValue":"Pontiac","Value"
+:214},{"DisplayValue":"Saab","Value":215},{"DisplayValue":"Saturn","Value":216},{"DisplayValue":"Scion"
+,"Value":233},{"DisplayValue":"Smart","Value":236},{"DisplayValue":"Subaru","Value":217},{"DisplayValue"
+:"Suzuki","Value":218},{"DisplayValue":"Toyota","Value":219},{"DisplayValue":"Volkswagen","Value":220
+},{"DisplayValue":"Volvo","Value":221}],"Series":[{"DisplayValue":"2","Value":{"SeriesId":912,"VariantTypeName"
+:"4-door hatchback","DisplayText":"2","ActionUrl":"/iihs/ratings/vehicle/v/mazda/2-4-door-hatchback"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"3","Value":{"SeriesId":524,"VariantTypeName":"4-door
+ sedan","DisplayText":"3","ActionUrl":"/iihs/ratings/vehicle/v/mazda/3-4-door-sedan","Selected":false
+,"IconPath":null}},{"DisplayValue":"3","Value":{"SeriesId":524,"VariantTypeName":"4-door hatchback","DisplayText"
+:"3","ActionUrl":"/iihs/ratings/vehicle/v/mazda/3-4-door-hatchback","Selected":false,"IconPath":null
+}},{"DisplayValue":"5","Value":{"SeriesId":1036,"VariantTypeName":"4-door wagon","DisplayText":"5","ActionUrl"
+:"/iihs/ratings/vehicle/v/mazda/5-4-door-wagon","Selected":false,"IconPath":null}},{"DisplayValue":"6"
+,"Value":{"SeriesId":266,"VariantTypeName":"4-door sedan","DisplayText":"6","ActionUrl":"/iihs/ratings
+/vehicle/v/mazda/6-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"626","Value":{"SeriesId"
+:267,"VariantTypeName":"4-door sedan","DisplayText":"626","ActionUrl":"/iihs/ratings/vehicle/v/mazda
+/626-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue":"B Series","Value":{"SeriesId"
+:485,"VariantTypeName":"Regular cab pickup","DisplayText":"B Series","ActionUrl":"/iihs/ratings/vehicle
+/v/mazda/b-series-regular-cab-pickup","Selected":false,"IconPath":null}},{"DisplayValue":"B Series","Value"
+:{"SeriesId":485,"VariantTypeName":"Extended cab pickup","DisplayText":"B Series","ActionUrl":"/iihs
+/ratings/vehicle/v/mazda/b-series-extended-cab-pickup","Selected":false,"IconPath":null}},{"DisplayValue"
+:"CX-5","Value":{"SeriesId":982,"VariantTypeName":"4-door SUV","DisplayText":"CX-5","ActionUrl":"/iihs
+/ratings/vehicle/v/mazda/cx-5-4-door-suv","Selected":false,"IconPath":null}},{"DisplayValue":"CX-7","Value"
+:{"SeriesId":695,"VariantTypeName":"4-door SUV","DisplayText":"CX-7","ActionUrl":"/iihs/ratings/vehicle
+/v/mazda/cx-7-4-door-suv","Selected":false,"IconPath":null}},{"DisplayValue":"CX-9","Value":{"SeriesId"
+:699,"VariantTypeName":"4-door SUV","DisplayText":"CX-9","ActionUrl":"/iihs/ratings/vehicle/v/mazda/cx-9-4-door-suv"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Millenia","Value":{"SeriesId":373,"VariantTypeName"
+:"4-door sedan","DisplayText":"Millenia","ActionUrl":"/iihs/ratings/vehicle/v/mazda/millenia-4-door-sedan"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"MPV","Value":{"SeriesId":379,"VariantTypeName":"Minivan"
+,"DisplayText":"MPV","ActionUrl":"/iihs/ratings/vehicle/v/mazda/mpv-minivan","Selected":false,"IconPath"
+:null}},{"DisplayValue":"Protege","Value":{"SeriesId":846,"VariantTypeName":"4-door sedan","DisplayText"
+:"Protege","ActionUrl":"/iihs/ratings/vehicle/v/mazda/protege-4-door-sedan","Selected":false,"IconPath"
+:null}},{"DisplayValue":"Tribute","Value":{"SeriesId":461,"VariantTypeName":"4-door SUV","DisplayText"
+:"Tribute","ActionUrl":"/iihs/ratings/vehicle/v/mazda/tribute-4-door-suv","Selected":false,"IconPath"
+:null}}],"SelectedMakeId":206,"SelectedSeriesId":0,"SelectedMakeName":"Mazda","SelectedSeriesName":"MODEL"
+,"SelectedVariantTypeName":"","SelectedMakeNameSlug":"mazda","IsSeriesLookupEnabled":true}

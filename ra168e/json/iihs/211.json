@@ -1,0 +1,51 @@
+{"Makes":[{"DisplayValue":"Acura","Value":186},{"DisplayValue":"Audi","Value":187},{"DisplayValue":"BMW"
+,"Value":188},{"DisplayValue":"Buick","Value":189},{"DisplayValue":"Cadillac","Value":190},{"DisplayValue"
+:"Chevrolet","Value":191},{"DisplayValue":"Chrysler","Value":192},{"DisplayValue":"Daewoo","Value":193
+},{"DisplayValue":"Dodge","Value":194},{"DisplayValue":"Fiat","Value":244},{"DisplayValue":"Ford","Value"
+:195},{"DisplayValue":"GMC","Value":225},{"DisplayValue":"Honda","Value":196},{"DisplayValue":"Hummer"
+,"Value":234},{"DisplayValue":"Hyundai","Value":197},{"DisplayValue":"Infiniti","Value":198},{"DisplayValue"
+:"Isuzu","Value":199},{"DisplayValue":"Jaguar","Value":200},{"DisplayValue":"Jeep","Value":201},{"DisplayValue"
+:"Kia","Value":202},{"DisplayValue":"Land Rover","Value":203},{"DisplayValue":"Lexus","Value":204},{"DisplayValue"
+:"Lincoln","Value":205},{"DisplayValue":"Maserati","Value":251},{"DisplayValue":"Mazda","Value":206}
+,{"DisplayValue":"Mercedes","Value":207},{"DisplayValue":"Mercury","Value":208},{"DisplayValue":"Mini"
+,"Value":209},{"DisplayValue":"Mitsubishi","Value":210},{"DisplayValue":"Nissan","Value":211},{"DisplayValue"
+:"Oldsmobile","Value":212},{"DisplayValue":"Plymouth","Value":213},{"DisplayValue":"Pontiac","Value"
+:214},{"DisplayValue":"Saab","Value":215},{"DisplayValue":"Saturn","Value":216},{"DisplayValue":"Scion"
+,"Value":233},{"DisplayValue":"Smart","Value":236},{"DisplayValue":"Subaru","Value":217},{"DisplayValue"
+:"Suzuki","Value":218},{"DisplayValue":"Toyota","Value":219},{"DisplayValue":"Volkswagen","Value":220
+},{"DisplayValue":"Volvo","Value":221}],"Series":[{"DisplayValue":"Altima","Value":{"SeriesId":280,"VariantTypeName"
+:"4-door sedan","DisplayText":"Altima","ActionUrl":"/iihs/ratings/vehicle/v/nissan/altima-4-door-sedan"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Cube","Value":{"SeriesId":757,"VariantTypeName"
+:"4-door wagon","DisplayText":"Cube","ActionUrl":"/iihs/ratings/vehicle/v/nissan/cube-4-door-wagon","Selected"
+:false,"IconPath":null}},{"DisplayValue":"Frontier","Value":{"SeriesId":333,"VariantTypeName":"Crew cab
+ pickup","DisplayText":"Frontier","ActionUrl":"/iihs/ratings/vehicle/v/nissan/frontier-crew-cab-pickup"
+,"Selected":false,"IconPath":null}},{"DisplayValue":"Juke","Value":{"SeriesId":921,"VariantTypeName"
+:"4-door wagon","DisplayText":"Juke","ActionUrl":"/iihs/ratings/vehicle/v/nissan/juke-4-door-wagon","Selected"
+:false,"IconPath":null}},{"DisplayValue":"Leaf","Value":{"SeriesId":919,"VariantTypeName":"4-door hatchback"
+,"DisplayText":"Leaf","ActionUrl":"/iihs/ratings/vehicle/v/nissan/leaf-4-door-hatchback","Selected":false
+,"IconPath":null}},{"DisplayValue":"Maxima","Value":{"SeriesId":371,"VariantTypeName":"4-door sedan"
+,"DisplayText":"Maxima","ActionUrl":"/iihs/ratings/vehicle/v/nissan/maxima-4-door-sedan","Selected":false
+,"IconPath":null}},{"DisplayValue":"Murano","Value":{"SeriesId":380,"VariantTypeName":"4-door SUV","DisplayText"
+:"Murano","ActionUrl":"/iihs/ratings/vehicle/v/nissan/murano-4-door-suv","Selected":false,"IconPath"
+:null}},{"DisplayValue":"Pathfinder","Value":{"SeriesId":390,"VariantTypeName":"4-door SUV","DisplayText"
+:"Pathfinder","ActionUrl":"/iihs/ratings/vehicle/v/nissan/pathfinder-4-door-suv","Selected":false,"IconPath"
+:null}},{"DisplayValue":"Quest","Value":{"SeriesId":399,"VariantTypeName":"Minivan","DisplayText":"Quest"
+,"ActionUrl":"/iihs/ratings/vehicle/v/nissan/quest-minivan","Selected":false,"IconPath":null}},{"DisplayValue"
+:"Rogue","Value":{"SeriesId":732,"VariantTypeName":"4-door SUV","DisplayText":"Rogue","ActionUrl":"/iihs
+/ratings/vehicle/v/nissan/rogue-4-door-suv","Selected":false,"IconPath":null}},{"DisplayValue":"Rogue
+ Select","Value":{"SeriesId":1035,"VariantTypeName":"4-door SUV","DisplayText":"Rogue Select","ActionUrl"
+:"/iihs/ratings/vehicle/v/nissan/rogue-select-4-door-suv","Selected":false,"IconPath":null}},{"DisplayValue"
+:"Sentra","Value":{"SeriesId":417,"VariantTypeName":"4-door sedan","DisplayText":"Sentra","ActionUrl"
+:"/iihs/ratings/vehicle/v/nissan/sentra-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue"
+:"Titan","Value":{"SeriesId":462,"VariantTypeName":"Crew cab pickup","DisplayText":"Titan","ActionUrl"
+:"/iihs/ratings/vehicle/v/nissan/titan-crew-cab-pickup","Selected":false,"IconPath":null}},{"DisplayValue"
+:"Versa","Value":{"SeriesId":691,"VariantTypeName":"4-door sedan","DisplayText":"Versa","ActionUrl":"
+/iihs/ratings/vehicle/v/nissan/versa-4-door-sedan","Selected":false,"IconPath":null}},{"DisplayValue"
+:"Versa","Value":{"SeriesId":691,"VariantTypeName":"4-door hatchback","DisplayText":"Versa","ActionUrl"
+:"/iihs/ratings/vehicle/v/nissan/versa-4-door-hatchback","Selected":false,"IconPath":null}},{"DisplayValue"
+:"Versa Note","Value":{"SeriesId":1032,"VariantTypeName":"4-door hatchback","DisplayText":"Versa Note"
+,"ActionUrl":"/iihs/ratings/vehicle/v/nissan/versa-note-4-door-hatchback","Selected":false,"IconPath"
+:null}},{"DisplayValue":"Xterra","Value":{"SeriesId":454,"VariantTypeName":"4-door SUV","DisplayText"
+:"Xterra","ActionUrl":"/iihs/ratings/vehicle/v/nissan/xterra-4-door-suv","Selected":false,"IconPath"
+:null}}],"SelectedMakeId":211,"SelectedSeriesId":0,"SelectedMakeName":"Nissan","SelectedSeriesName":"MODEL"
+,"SelectedVariantTypeName":"","SelectedMakeNameSlug":"nissan","IsSeriesLookupEnabled":true}
