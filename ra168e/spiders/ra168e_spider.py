@@ -1,51 +1,81 @@
 import scrapy, re, os, json, pickle
 from itertools import product, izip
-from ra168e.items import vehicle_urls, zero_sixty, issues, entry, safety, safety_entry
+from ra168e.items import vehicle_urls, zero_sixty, issues, entry, safety, safety_entry, major
 from pymongo import MongoClient
 from selenium import webdriver
 
-# mongo_host_name = os.environ['VEHICLE_DATA_PORT_27017_TCP_ADDR']
-# mongo_port = int(os.environ['VEHICLE_DATA_PORT_27017_TCP_PORT'])
-mongo_host_name = 'localhost'
-mongo_port = 27017
+mongo_host_name = os.environ['VEHICLE_DATA_PORT_27017_TCP_ADDR']
+mongo_port = int(os.environ['VEHICLE_DATA_PORT_27017_TCP_PORT'])
+# mongo_host_name = 'localhost'
+# mongo_port = 27017
 
 client = MongoClient(mongo_host_name, mongo_port)
 
-model_stats_db = client['cars']
-model_stats_coll = model_stats_db.urls
-
-uploaded_db = client['upload_set']
-uploaded_coll = uploaded_db.uploaded
-
 vehicle_data_db = client['vehicle_data']
-issues_collection = vehicle_data_db.issues
+issues_collection = vehicle_data_db.issues_v2
 
 issues_vehicles_list = issues_collection.distinct ('name')
 
-global makes
-global urls_list
-urls_list = model_stats_coll.distinct ('listing_url')
-
-makes = [
-u'aston--martin',
-u'audi',
-u'bentley',
-u'bmw',
-u'bugatti',
-u'cadillac',
-u'ferrari',
-u'infiniti',
-u'jaguar',
-u'lamborghini',
-u'land--rover',
-u'lexus',
-u'lotus',
-u'maserati',
-u'mclaren',
-u'mercedes-benz',
-u'porsche',
-u'rolls-royce'
-]
+odi_makes = [
+"VOLVO",
+"VOLKSWAGEN",
+"TOYOTA",
+"TESLA",
+"SUZUKI",
+"SUPER DUTY",
+"SUBARU",
+"SRT",
+"SCION",
+"SATURN",
+"SAAB",
+"ROLLS-ROYCE",
+"RAM",
+"PORSCHE",
+"PONTIAC",
+"NISSAN",
+"MITSUBISHI",
+"MINI",
+"MERCURY",
+"MERCEDES-BENZ",
+"MERCEDES BENZ",
+"MERCEDES",
+"MCLAREN",
+"MAZDA",
+"MASERATI",
+"LOTUS",
+"LINCOLN",
+"LEXUS",
+"LAND ROVER",
+"LAMBORGHINI",
+"KOENIGSEGG",
+"KIA",
+"KENWORTH",
+"JEEP",
+"JAGUAR",
+"ISUZU",
+"INTERNATIONAL",
+"INFINITI",
+"HYUNDAI",
+"HONDA",
+"GMC",
+"FREIGHTLINER",
+"FORD",
+"FISKER",
+"FIAT",
+"FERRARI",
+"DODGE",
+"CHRYSLER",
+"CHEVROLET",
+"CAN-AM",
+"CADILLAC",
+"BUICK",
+"BUGATTI",
+"BMW",
+"BENTLEY",
+"AUDI",
+"ASTON MARTIN",
+"ALFA"
+"ACURA"]
 
 def isfloat(value):
   try:
@@ -113,28 +143,60 @@ class iihs (scrapy.Spider):
 class odi (scrapy.Spider):
 	name = "odi"
 	json_path = '/Users/bski/Project/image_training/ra168e/ra168e/json/'
-	def __init__ (self, file_name):
-		self.json_file_name = file_name
+	def __init__ (self, file):
+		self.json_file_name = file
 		self.driver = webdriver.PhantomJS()		
+		self.driver.set_page_load_timeout (10)
 
 	def parse_stats(self, btn_selector_string, stats_selector_string):
 		items_list = []
 		try:
 			div_btn = self.driver.find_element_by_xpath (btn_selector_string)
-			div_btn.click()
-			div_text = [x.text for x in self.driver.find_elements_by_xpath (stats_selector_string)]
-			for text in div_text:
-				if "All" not in text:
-					try:
-						stats_item = entry()	
-						stats_item['component'] = text[0:text.find("(")].strip().lower()
-						stats_item['count'] = int (re.findall (r'\d+', text)[0])
-						items_list.append (stats_item)
-					except:
-						pass
+			if div_btn.is_displayed():
+				div_btn.click()
+				div_text = [x.text for x in self.driver.find_elements_by_xpath (stats_selector_string)]
+				for text in div_text:
+					print text
+					if "All" not in text:
+						try:
+							stats_item = entry()	
+							stats_item['component'] = text[0:text.find("(")].strip().lower()
+							stats_item['count'] = int (re.findall (r'\d+', text)[0])
+							items_list.append (stats_item)
+						except:
+							pass
 		except:
 			pass
 		return items_list
+
+	def parse_text (self, btn_selector_string):
+		text_entries = []
+		try:
+			div_btn = self.driver.find_element_by_xpath (btn_selector_string)
+			if div_btn.is_displayed():
+				div_btn.click()
+				try:
+					options_25 = self.driver.find_element_by_xpath ('//option[@value="25"]')
+					if options_25.is_displayed():
+						options_25.click()
+				except:
+					pass
+				titles = [x.text for x in self.driver.find_elements_by_xpath ('//div[@class="issuesection"]/h3/a') if len(x.text) > 0]
+				fields = [x.text.split("\n") for x in self.driver.find_elements_by_xpath ('//div/div/div[@class="product_overview"]') if len(x.text) > 0]
+				for k, v in zip (titles, fields):
+					major_issue = major()
+					major_issue['title'] = k
+					major_issue['fields'] = []
+					for field in v:
+							k_v_pair = field.split (":")
+							safety_entry_doc = safety_entry()
+							safety_entry_doc['name'] = k_v_pair[0]
+							safety_entry_doc['value'] = k_v_pair[1]
+							major_issue['fields'].append (safety_entry_doc)
+					text_entries.append (major_issue)
+		except:
+			pass
+		return text_entries
 
 	def start_requests(self):
 		request_list = []
@@ -145,30 +207,36 @@ class odi (scrapy.Spider):
 			for years in item[1]:
 				year = years['Y']
 				for makes in years['makes']:
-					make = makes['m']
-					for model in makes['models']:
-						issue_item = issues()
-						model_name = model['o']
-						mid_string = model['s']
-						mid, recalls, investigations, complaints, tsbs = mid_string.split (",") 
-						issue_item['name'] = "%s %s %s" %(year, make, model_name)
-						issue_item['recalls_cnt'] = int (recalls)
-						issue_item['investigations_cnt'] = int (investigations)
-						issue_item['complaints_cnt'] = int (complaints)
-						issue_item['tsbs_cnt'] = int (tsbs)
-						if issue_item['name'] not in issues_vehicles_list:
-							request = scrapy.Request (construct_odi_url (year, make, model_name, mid), callback=self.parse_page)
-							request.meta['issue_item'] = issue_item
-							request_list.append (request)
-		return request_list
+					if makes['m'] in odi_makes:
+						make = makes['m']
+						for model in makes['models']:
+							issue_item = issues()
+							model_name = model['o']
+							mid_string = model['s']
+							mid, recalls, investigations, complaints, tsbs = mid_string.split (",") 
+							issue_item['name'] = "%s %s %s" %(year, make, model_name)
+							issue_item['recalls_cnt'] = int (recalls)
+							issue_item['investigations_cnt'] = int (investigations)
+							issue_item['complaints_cnt'] = int (complaints)
+							issue_item['tsbs_cnt'] = int (tsbs)
+							if issue_item['name'] not in issues_vehicles_list:
+								request = scrapy.Request (construct_odi_url (year, make, model_name, mid), callback=self.parse_page)
+								request.meta['issue_item'] = issue_item
+								request_list.append (request)
+			return request_list
 
 	def parse_page (self, response):
 		issue_item = response.meta['issue_item']
 		try:
+			self.driver = webdriver.PhantomJS()		
+			self.driver.set_page_load_timeout (10)
 			self.driver.get (response.url)
 			issue_item['recall_stats'] = self.parse_stats ('//a[@id="recalls-tab"]', '//select[@id="component_det_rcl"]/option')
 			issue_item['investigation_stats'] = self.parse_stats ('//a[@id="investigations-tab"]', '//select[@id="component_det_inv"]/option')
 			issue_item['complain_stats'] = self.parse_stats ('//a[@id="complaints-tab"]', '//select[@id="component_det_cmpl"]/option')
+			
+			issue_item['investigations'] = self.parse_text ('//a[@id="investigations-tab"]')
+			issue_item['recalls'] = self.parse_text ('//a[@id="recalls-tab"]')
 		except:
 			pass
 		return issue_item
