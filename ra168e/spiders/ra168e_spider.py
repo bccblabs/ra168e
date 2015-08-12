@@ -4,10 +4,10 @@ from ra168e.items import vehicle_urls, zero_sixty, issues, entry, safety, safety
 from pymongo import MongoClient
 from selenium import webdriver
 
-mongo_host_name = os.environ['VEHICLE_DATA_PORT_27017_TCP_ADDR']
-mongo_port = int(os.environ['VEHICLE_DATA_PORT_27017_TCP_PORT'])
-# mongo_host_name = 'localhost'
-# mongo_port = 27017
+#mongo_host_name = os.environ['VEHICLE_DATA_PORT_27017_TCP_ADDR']
+#mongo_port = int(os.environ['VEHICLE_DATA_PORT_27017_TCP_PORT'])
+mongo_host_name = 'localhost'
+mongo_port = 27017
 
 client = MongoClient(mongo_host_name, mongo_port)
 
@@ -91,7 +91,7 @@ def construct_odi_url (year, make, model, model_id):
 
 class iihs (scrapy.Spider):
 	name='iihs'
-	json_path = '/Users/bski/Project/image_training/ra168e/ra168e/json/'
+	json_path = '/home/ec2-user/odi/ra168e/ra168e/json/'
 	base_url = 'http://www.iihs.org'
 
 	def parse_entries(self, response, key_xpath, value_xpath):
@@ -142,10 +142,10 @@ class iihs (scrapy.Spider):
 
 class odi (scrapy.Spider):
 	name = "odi"
-	json_path = '/Users/bski/Project/image_training/ra168e/ra168e/json/'
+	json_path = '/home/ec2-user/odi/ra168e/ra168e/json/'
 	def __init__ (self, file):
 		self.json_file_name = file
-		self.driver = webdriver.PhantomJS()		
+		self.driver = webdriver.PhantomJS('phantomjs')		
 		self.driver.set_page_load_timeout (10)
 
 	def parse_stats(self, btn_selector_string, stats_selector_string):
