@@ -5,13 +5,10 @@ BOT_NAME = 'ra168e'
 SPIDER_MODULES = ['ra168e.spiders']
 NEWSPIDER_MODULE = 'ra168e.spiders'
 LOG_LEVEL="INFO"
-LOG_FILE="pure_images.log"
+# LOG_FILE="pure_images.log"
 ITEM_PIPELINES = {
-	'ra168e.middlewares.RandomUserAgentMiddleware': 400,
-	'ra168e.middlewares.ProxyMiddleware': 410,
 	'scrapy_mongodb.MongoDBPipeline': 90,
-	'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
- 	'scrapy.pipelines.images.ImagesPipeline': 1
+ 	'ra168e.pipelines.images.DownloadClassifyPipeline': 1
 }
 
 USER_AGENT_LIST = [
@@ -20,11 +17,11 @@ USER_AGENT_LIST = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.3 Safari/534.53.10'
 ]
 
-MONGODB_URI = 'mongodb://' + os.environ['VEHICLE_DATA_PORT_27017_TCP_ADDR'] + ':' + os.environ['VEHICLE_DATA_PORT_27017_TCP_PORT']
+MONGODB_URI = 'mongodb://' + "localhost" + ':' + "27017"
 MONGODB_COLLECTION = 'images'
 MONGODB_DATABASE = 'pure_images'
-MONGODB_BUFFER_DATA = 15
+MONGODB_BUFFER_DATA = 1
 CONCURRENT_REQUESTS = 3
 DOWNLOAD_DELAY = 1
-IMAGES_STORE = "/pure_images"
+IMAGES_STORE = "/home/ubuntu/pure_images"
 
