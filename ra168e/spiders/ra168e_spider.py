@@ -15,5 +15,5 @@ class images (scrapy.Spider):
 			print x, len(y)
 			car_images = image_doc()
 			car_images["label"] = x
-			car_images["image_urls"] = y[:10]
+			car_images["image_urls"] = y[:1000]
 			yield car_images
