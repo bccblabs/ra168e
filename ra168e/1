@@ -1,8 +1,0 @@
-2015-08-12 02:08:04 [scrapy] INFO: Scrapy 1.0.1 started (bot: ra168e)
-2015-08-12 02:08:04 [scrapy] INFO: Optional features available: ssl, http11
-2015-08-12 02:08:04 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'ra168e.spiders', 'SPIDER_MODULES': ['ra168e.spiders'], 'CONCURRENT_REQUESTS': 15, 'DOWNLOAD_DELAY': 3, 'BOT_NAME': 'ra168e'}
-Usage
-=====
-  scrapy crawl [options] <spider>
-
-crawl: error: running 'scrapy crawl' with more than one spider is no longer supported

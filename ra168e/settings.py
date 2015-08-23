@@ -5,7 +5,7 @@ BOT_NAME = 'ra168e'
 SPIDER_MODULES = ['ra168e.spiders']
 NEWSPIDER_MODULE = 'ra168e.spiders'
 LOG_LEVEL="INFO"
-# LOG_FILE="scrap.log"
+LOG_FILE="pure_images.log"
 ITEM_PIPELINES = {
 	'ra168e.middlewares.RandomUserAgentMiddleware': 400,
 	'ra168e.middlewares.ProxyMiddleware': 410,
@@ -20,23 +20,11 @@ USER_AGENT_LIST = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.3 Safari/534.53.10'
 ]
 
-# HTTP_PROXY = 'http://0.0.0.0:8123'
-
-# MONGODB_COLLECTION = 'urls'
-# MONGODB_BUFFER_DATA = 2
-# CONCURRENT_REQUESTS = 3
-# DOWNLOAD_DELAY = 2
-# MONGODB_DATABASE = 'fine_scrap'
-# MONGODB_URI = 'mongodb://' + os.environ['VEHICLE_DATA_PORT_27017_TCP_ADDR'] + ':' + os.environ['VEHICLE_DATA_PORT_27017_TCP_PORT']
-MONGODB_URI = 'mongodb://localhost:27017'
-IMAGES_STORE = '/pure_images'
-# MONGODB_COLLECTION = 'issues_v2'
-# MONGODB_DATABASE = 'vehicle_data'
-
+MONGODB_URI = 'mongodb://' + os.environ['VEHICLE_DATA_PORT_27017_TCP_ADDR'] + ':' + os.environ['VEHICLE_DATA_PORT_27017_TCP_PORT']
 MONGODB_COLLECTION = 'images'
 MONGODB_DATABASE = 'pure_images'
-
 MONGODB_BUFFER_DATA = 15
-CONCURRENT_REQUESTS = 5
-DOWNLOAD_DELAY = 3
+CONCURRENT_REQUESTS = 3
+DOWNLOAD_DELAY = 1
+IMAGES_STORE = "/pure_images"
 
