@@ -26,18 +26,18 @@ class DownloadClassifyPipeline (ImagesPipeline):
 			yield scrapy.Request(image_url)
 	def item_completed (self, results, item, info):
 		images_path = [x['path'] for ok, x in results if ok]
+		ext_images = []
 		for x in images_path:
 			sample_path = images_root + x
 			image = caffe.io.load_image(sample_path)
 			resized_image = caffe.io.resize_image (image, (256,256,3))
 			res = c0.predict ([resized_image])
 			clz = np.argmax(res[0])
-			ext_images = []
 			int_parts_images = []
 			if clz > 0:
 				ext_images.append (sample_path)
 			else:
 				int_parts_images.append (sample_path)
-			item['ext'] = ext_images
-			return item
+		item['ext'] = ext_images
+		return item
 
