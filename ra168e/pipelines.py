@@ -32,9 +32,12 @@ class DownloadClassifyPipeline (ImagesPipeline):
 			resized_image = caffe.io.resize_image (image, (256,256,3))
 			res = c0.predict ([resized_image])
 			clz = np.argmax(res[0])
+			ext_images = []
+			int_parts_images = []
 			if clz > 0:
-				item['int_parts'].append (sample_path)
+				ext_images.append (sample_path)
 			else:
-				item['ext'].append (sample_path)
+				int_parts_images.append (sample_path)
+			item['image_paths'] = ext_images
 			return item
 
