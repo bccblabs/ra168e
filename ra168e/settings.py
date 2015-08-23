@@ -8,7 +8,7 @@ LOG_LEVEL="INFO"
 # LOG_FILE="pure_images.log"
 ITEM_PIPELINES = {
 	'scrapy_mongodb.MongoDBPipeline': 90,
- 	'ra168e.pipelines.images.DownloadClassifyPipeline': 1
+ 	'ra168e.pipelines.DownloadClassifyPipeline': 1
 }
 
 USER_AGENT_LIST = [
