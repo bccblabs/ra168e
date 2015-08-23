@@ -5,7 +5,7 @@ import numpy as np
 import sys, glob
 
 caffe_root = "/home/ubuntu/caffe/"
-images_path = "/home/ubuntu/pure_images"
+images_root = "/home/ubuntu/pure_images/"
 
 sys.path.insert (0, caffe_root + "/python")
 import caffe
@@ -27,7 +27,7 @@ class DownloadClassifyPipeline (ImagesPipeline):
 	def item_completed (self, results, item, info):
 		images_path = [x['path'] for ok, x in results if ok]
 		for x in images_path:
-			image = caffe.io.load_image(x)
+			image = caffe.io.load_image(images_root + x)
 			resized_image = caffe.io.resize_image (image, (256,256,3))
 			res = c0.predict ([resized_image])
 			print res
