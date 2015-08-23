@@ -38,6 +38,6 @@ class DownloadClassifyPipeline (ImagesPipeline):
 				ext_images.append (sample_path)
 			else:
 				int_parts_images.append (sample_path)
-			item['image_paths'] = ext_images
+			item['ext'] = ext_images
 			return item
 
