@@ -11,7 +11,7 @@ class images (scrapy.Spider):
 		self.url_file = file_name
 	def parse(self, response):
 		images_source = pickle.load (open(self.images_urls_path + self.url_file, "rb"))
-		for x, y in images_source.items()[3]:
+		for x, y in images_source.items():
 			print x, len(y)
 			car_images = image_doc()
 			car_images["label"] = x
