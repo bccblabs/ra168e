@@ -1,4 +1,6 @@
+import pickle
 from collections import defaultdict
+import math
 
 labels = defaultdict(list)
 more_labels = ["http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=50&sf1Dir=DESC&sf1Nm=price&sf2Dir=ASC&sf2Nm=miles&zc=48104&rd=99999&mkId=20044&mdId=21857&yrId=20141&yrId=20197&yrId=20142&yrId=20198&yrId=20143&yrId=20141&searchSource=GN_REFINEMENT"
@@ -364,9 +366,10 @@ for x, y in labels.items():
         all_urls += y
 print len (all_urls)
 print len (set(all_urls))
-num_instances, num_per_instance = 4,6
+all_urls = list(set(all_urls))
+num_instances, num_per_instance = 2, 4
 
 
-batch_size = int (math.ceil (len (urls) / num_instances / num_per_instance))
-for x in range (0, len(urls), batch_size):
-	pickle.dump (urls[x:x+batch_size], open ("image_urls_%d.p" % (x/batch_size), 'wb'))
+batch_size = int (math.ceil (len (all_urls) / num_instances / num_per_instance))
+for x in range (0, len(all_urls), batch_size):
+	pickle.dump (all_urls[x:x+batch_size], open ("image_urls_%d.p" % (x/batch_size), 'wb'))
