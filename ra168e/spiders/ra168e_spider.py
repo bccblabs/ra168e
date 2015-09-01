@@ -9,10 +9,10 @@ mongo_port = int(os.environ['VEHICLE_DATA_PORT_27017_TCP_PORT'])
 
 client = MongoClient(mongo_host_name, mongo_port)
 
-model_stats_db = client['cars']
-model_stats_coll = model_stats_db.urls
+model_stats_db = client['pure_urls']
+model_stats_coll = model_stats_db.image_urls
 
-uploaded_db = client['upload_set']
+uploaded_db = client['images_url']
 uploaded_coll = uploaded_db.uploaded
 
 import pickle
