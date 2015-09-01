@@ -17,7 +17,6 @@ uploaded_coll = uploaded_db.uploaded
 
 import pickle
 
-global urls_list
 urls_list = model_stats_coll.distinct ('listing_url')
 global makes
 
@@ -47,6 +46,7 @@ class dupont_spider (scrapy.Spider):
 		return request_list
 
 	def parse_page_listings (self, response):
+		global urls_list
 		listing_page_urls = ['http://www.dupontregistry.com/autos/' + x.replace ('../../../../', '') for x in response.xpath ('//a[contains(@class, "car_title")]/@href').extract()]
 		for page_url in listing_page_urls:
 			if page_url not in urls_list:
@@ -97,6 +97,7 @@ class ImagesSpider (scrapy.Spider):
 		return request_list
 
 	def parse_index_page (self, response):
+		global urls_list
 		links = [listing_link for listing_link in response.xpath ('//a[contains(@class, "js-vr-vdp-link")]/@href').extract() if 'photo' not in listing_link]
 		for x in links:
 			if "http://www.cars.com" + x not in urls_list:
