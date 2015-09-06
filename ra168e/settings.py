@@ -21,7 +21,7 @@ MONGODB_URI = 'mongodb://' + "localhost" + ':' + "27017"
 MONGODB_COLLECTION = 'images'
 MONGODB_DATABASE = 'pure_images2'
 MONGODB_BUFFER_DATA = 1
-CONCURRENT_REQUESTS = 5
+CONCURRENT_REQUESTS = 10 
 DOWNLOAD_DELAY = 1
 IMAGES_STORE = "/home/ubuntu/pure_images2"
 
