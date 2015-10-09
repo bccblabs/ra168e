@@ -84,7 +84,7 @@ class ImagesSpider (scrapy.Spider):
 	bad_photo_kwd = ['stock', 'search', 'car-pictures.cars.com']
 	body_styles_kwd = ['convertible', 'coupe', 'hatchback', 'truck', 'suv', 'wagon', 'minivan', 'sedan', 'pickup', 'van']
 
-	pf_path = '/ubuntu/home/images_ra168e/ra168e/urls/'
+	pf_path = '/ubuntu/home/ra168e/ra168e/urls/'
 	index_urls = []
 
 	def __init__ (self, batch):

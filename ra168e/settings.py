@@ -15,9 +15,9 @@ ITEM_PIPELINES = {
 
 MONGODB_URI = 'mongodb://' + os.environ['VEHICLE_DATA_PORT_27017_TCP_ADDR'] + ':' + os.environ['VEHICLE_DATA_PORT_27017_TCP_PORT']
 
-MONGODB_DATABASE = 'pure_images3'
+MONGODB_DATABASE = 'pure_images4'
 MONGODB_COLLECTION = 'urls'
-IMAGES_STORE = "/home/ubuntu/pure_images3"
+IMAGES_STORE = "/home/ubuntu/pure_images4"
 
 MONGODB_BUFFER_DATA = 10
 CONCURRENT_REQUESTS = 3
