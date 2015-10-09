@@ -17,4 +17,5 @@ class vehicle_urls (scrapy.Item):
     mileage = scrapy.Field()
     restored = scrapy.Field()
     listing_url = scrapy.Field()
-
+    ext = scrapy.Field()
+    int_parts = scrapy.Field()

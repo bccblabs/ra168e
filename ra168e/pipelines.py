@@ -3,7 +3,6 @@ from scrapy.exceptions import DropItem
 from scrapy.pipelines.images import ImagesPipeline
 import numpy as np
 import sys, glob
-
 caffe_root = "/home/ubuntu/caffe/"
 images_root = "/home/ubuntu/pure_images4/"
 
