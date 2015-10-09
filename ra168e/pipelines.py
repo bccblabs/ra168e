@@ -27,6 +27,7 @@ class DownloadClassifyPipeline (ImagesPipeline):
 		images_path = [x['path'] for ok, x in results if ok]
 		ext_images = []
 		int_parts = []
+		consec_int = 0
 		for x in images_path:
 			sample_path = images_root + x
 			image = caffe.io.load_image(sample_path)
@@ -34,9 +35,13 @@ class DownloadClassifyPipeline (ImagesPipeline):
 			res = c0.predict ([resized_image])
 			clz = np.argmax(res[0])
 			print clz
-			if clz > 0:
+			if consec_int > 3:
+				break
+			elif clz > 0:
+				consec_int = consec_int + 1
 				int_parts.append (sample_path)
-			else:
+			elif clz == 0:
+				consec_int = 0
 				ext_images.append (sample_path)
 		item['ext'] = ext_images
 		item['int_parts'] = int_parts

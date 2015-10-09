@@ -1,0 +1,31 @@
+2015-10-09 02:44:40 [scrapy] INFO: Scrapy 1.0.3.post1+g83a06ed started (bot: ra168e)
+2015-10-09 02:44:40 [scrapy] INFO: Optional features available: ssl, http11
+2015-10-09 02:44:40 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'ra168e.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 5, 'SPIDER_MODULES': ['ra168e.spiders'], 'BOT_NAME': 'ra168e', 'LOG_FILE': 'pure_images.log', 'DOWNLOAD_DELAY': 1}
+2015-10-09 02:44:40 [scrapy] INFO: Enabled extensions: CloseSpider, TelnetConsole, LogStats, CoreStats, SpiderState
+2015-10-09 02:44:40 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-10-09 02:44:40 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-10-09 02:44:42 [py.warnings] WARNING: /usr/local/lib/python2.7/dist-packages/scrapy_mongodb.py:30: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy import log
+
+2015-10-09 02:44:42 [py.warnings] WARNING: /usr/local/lib/python2.7/dist-packages/scrapy_mongodb.py:31: ScrapyDeprecationWarning: Module `scrapy.contrib.exporter` is deprecated, use `scrapy.exporters` instead
+  from scrapy.contrib.exporter import BaseItemExporter
+
+2015-10-09 02:44:42 [scrapy] INFO: Enabled item pipelines: DownloadClassifyPipeline, MongoDBPipeline
+2015-10-09 02:44:42 [scrapy] INFO: Spider opened
+2015-10-09 02:44:42 [py.warnings] WARNING: /usr/local/lib/python2.7/dist-packages/scrapy_mongodb.py:105: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  self.config['collection']))
+
+2015-10-09 02:44:42 [scrapy] INFO: Connected to MongoDB mongodb://localhost:27017, using "pure_images4/urls"
+2015-10-09 02:44:42 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-10-09 02:45:01 [py.warnings] WARNING: /usr/local/lib/python2.7/dist-packages/scrapy_mongodb.py:256: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  spider=spider)
+
+2015-10-09 02:45:02 [py.warnings] WARNING: /usr/local/lib/python2.7/dist-packages/scrapy_mongodb.py:258: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg(u'Duplicate key found', level=log.DEBUG)
+
+2015-10-09 02:46:19 [scrapy] INFO: Crawled 33 pages (at 33 pages/min), scraped 3 items (at 3 items/min)
+2015-10-09 02:46:42 [scrapy] INFO: Crawled 52 pages (at 19 pages/min), scraped 3 items (at 0 items/min)
+2015-10-09 02:47:42 [scrapy] INFO: Crawled 72 pages (at 20 pages/min), scraped 5 items (at 2 items/min)
+2015-10-09 02:49:06 [scrapy] INFO: Crawled 91 pages (at 19 pages/min), scraped 6 items (at 1 items/min)
+2015-10-09 02:50:35 [scrapy] INFO: Crawled 122 pages (at 31 pages/min), scraped 8 items (at 2 items/min)
+2015-10-09 02:50:42 [scrapy] INFO: Crawled 129 pages (at 7 pages/min), scraped 8 items (at 0 items/min)
