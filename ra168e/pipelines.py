@@ -5,7 +5,7 @@ import numpy as np
 import sys, glob
 
 caffe_root = "/home/ubuntu/caffe/"
-images_root = "/home/ubuntu/pure_images/"
+images_root = "/home/ubuntu/pure_images3/"
 
 sys.path.insert (0, caffe_root + "/python")
 import caffe
