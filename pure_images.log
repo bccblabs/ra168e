@@ -58,3 +58,7 @@
 2015-10-09 03:20:57 [scrapy] INFO: Crawled 605 pages (at 16 pages/min), scraped 37 items (at 1 items/min)
 2015-10-09 03:22:32 [scrapy] INFO: Crawled 641 pages (at 36 pages/min), scraped 38 items (at 1 items/min)
 2015-10-09 03:22:42 [scrapy] INFO: Crawled 651 pages (at 10 pages/min), scraped 38 items (at 0 items/min)
+2015-10-09 03:23:58 [scrapy] INFO: Crawled 667 pages (at 16 pages/min), scraped 40 items (at 2 items/min)
+2015-10-09 03:25:27 [scrapy] INFO: Crawled 699 pages (at 32 pages/min), scraped 42 items (at 2 items/min)
+2015-10-09 03:25:42 [scrapy] INFO: Crawled 718 pages (at 19 pages/min), scraped 43 items (at 1 items/min)
+2015-10-09 03:26:53 [scrapy] INFO: Crawled 736 pages (at 18 pages/min), scraped 44 items (at 1 items/min)
