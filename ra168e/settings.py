@@ -15,7 +15,7 @@ ITEM_PIPELINES = {
 
 MONGODB_URI = 'mongodb://localhost:27017'
 
-MONGODB_DATABASE = 'pure_images4'
+MONGODB_DATABASE = 'pure_images5'
 MONGODB_COLLECTION = 'urls'
 IMAGES_STORE = "/home/ubuntu/pure_images4"
 

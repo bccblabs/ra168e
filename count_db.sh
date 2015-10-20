@@ -1,2 +1,2 @@
 #!/bin/bash
-mongo pure_images4 --eval "db.urls.count()"
+mongo pure_images5 --eval "db.urls.count()"
