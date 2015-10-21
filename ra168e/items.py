@@ -29,15 +29,8 @@ class major (scrapy.Item):
 
 class issues (scrapy.Item):
     name = scrapy.Field()
-    recalls_cnt = scrapy.Field()
-    investigations_cnt = scrapy.Field()
-    complaints_cnt = scrapy.Field()
-    tsbs_cnt = scrapy.Field()
-    recall_stats = scrapy.Field()
-    investigation_stats = scrapy.Field()
-    complain_stats = scrapy.Field()
-    investigations = scrapy.Field()
-    recalls = scrapy.Field()
+    count = scrapy.Field()
+    details = scrapy.Field()
 
 class entry (scrapy.Item):
     component = scrapy.Field()
