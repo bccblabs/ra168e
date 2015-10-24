@@ -1,0 +1,12 @@
+(lp0
+S'http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=100&photoId=46724&requestorTrackingInfo=RTB_SEARCH&yrId=20199&yrId=20198&yrId=20197&yrId=20144&yrId=20143&yrId=20142&yrId=20141&PMmt=1-1-0&zc=92612&rd=99999&mdId=22306&mkId=20021&searchSource=SORT_BLENDED&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&sf1Nm=actualPhotoCount&sf1Dir=DESC&sf2Nm=price&sf2Dir=DESC'
+p1
+aS'http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=100&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&mkId=20021&mdId=22306&photoId=46724&yrId=20194&yrId=20138&yrId=20193&yrId=20137&yrId=20192&yrId=20136&yrId=20191&yrId=20135&yrId=20190&yrId=20194&searchSource=GN_REFINEMENT'
+p2
+aS'http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=250&photoId=46724&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=21758&mkId=20089&sf1Dir=DESC&searchSource=GN_BREADCRUMB&crSrtFlds=feedSegId-mkId-mdId&pgId=2102'
+p3
+aS'http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&mkId=20089&mdId=21758&photoId=46724&yrId=20201&yrId=27381&yrId=20145&yrId=20201&searchSource=GN_REFINEMENT'
+p4
+aS'http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=51006&mkId=20075&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&rpp=250'
+p5
+a.
