@@ -15,9 +15,9 @@ ITEM_PIPELINES = {
 
 MONGODB_URI = 'mongodb://localhost:27017'
 
-MONGODB_DATABASE = 'pure_images5'
+MONGODB_DATABASE = 'pure_images6'
 MONGODB_COLLECTION = 'urls'
-IMAGES_STORE = "/home/ubuntu/pure_images4"
+IMAGES_STORE = "/home/ubuntu/pure_images6"
 
 MONGODB_BUFFER_DATA = 1
 CONCURRENT_REQUESTS = 5
