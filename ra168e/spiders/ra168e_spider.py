@@ -27,8 +27,15 @@ makes = [u'aston--martin', u'audi', u'bentley', u'bmw', u'bugatti', u'cadillac',
 dupont_small = [
 "http://www.dupontregistry.com/autos/results/ferrari/612/all/refine?pagenum=1&perpage=30&sort=price_desc&zipcode=92612&inv=false",
 "http://www.dupontregistry.com/autos/results/ferrari/456--gt,456--gta,456--m,550--barchetta,550--maranello,575--maranello,f355,f355--gts,f355--spider,f512--m,testarossa/all/refine?distance=0&pagenum=1&perpage=30&sort=price_desc&zipcode=92612&inv=false",
-"http://www.dupontregistry.com/autos/results/lotus/all/all/refine?pagenum=1&perpage=100&sort=price_desc&zipcode=92612&inv=false&distance=0"
+"http://www.dupontregistry.com/autos/results/lotus/all/all/refine?pagenum=1&perpage=100&sort=price_desc&zipcode=92612&inv=false&distance=0",
+"http://www.dupontregistry.com/autos/results/lamborghini/countach,countach--25th--anniversary,diablo,diablo--roadster,diablo--sv,diablo--vt,diablo--vt--6.0,diablo--vt--roadster/all/refine?distance=0&pagenum=1&perpage=100&sort=price_desc&zipcode=92612&inv=false",
+"http://www.dupontregistry.com/autos/results/jaguar/e--type,e--type--3.8,e--type--4.2,e--type--s1,e--type--s3/all/refine?distance=0&pagenum=1&perpage=30&sort=price_desc&zipcode=92612&inv=false",
+"http://www.dupontregistry.com/autos/results/aston--martin/db7--volante,dbs,dbs--carbon--black,v12--vanquish,v12--vanquish--s,vanquish,vanquish--volante/all/refine?distance=0&pagenum=1&perpage=30&sort=price_desc&inv=false",
+"http://www.dupontregistry.com/autos/results/bentley/brooklands/all/refine?distance=0&pagenum=1&perpage=30&sort=price_desc&inv=false",
+"http://www.dupontregistry.com/autos/results/bugatti/veyron/all/refine?distance=0&pagenum=1&perpage=30&sort=price_desc&inv=false",
+"http://www.dupontregistry.com/autos/results/rolls-royce/phantom--coupe,phantom--drophead--coupe/all/refine?distance=0&pagenum=1&perpage=100&sort=price_desc&inv=false"
 ]
+
 def isfloat(value):
   try:
     float(value)
@@ -38,16 +45,14 @@ def isfloat(value):
 
 class dupont_spider (scrapy.Spider):
 	name='dupont'
-	pf_path = '/urls/'
-	makes = []
 
-	def __init__(self, batch):
-		self.makes = list (set(pickle.load (open (self.pf_path + batch + '.p', 'rb' ) ) ) )
+	# def __init__(self, batch):
+	# 	self.makes = list (set(pickle.load (open (self.pf_path + batch + '.p', 'rb' ) ) ) )
 
 	def start_requests(self):
 		for x in dupont_small:
 			yield scrapy.Request (x, callback=self.parse_page, dont_filter=True)
-			
+
 		# request_list=[]
 		# for make in self.makes:
 		# 	index_url = 'http://www.dupontregistry.com/autos/results/%s/all/all/refine?distance=0&inv=false&pagenum=1&perpage=100&sort=price_desc' %(make)
