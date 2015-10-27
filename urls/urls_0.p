@@ -1,8 +1,4 @@
 (lp0
-S'http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&mkId=20072&mdId=21197&photoId=46724&searchSource=GN_REFINEMENT'
+S'http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&sf2Nm=miles&requestorTrackingInfo=RTB_SEARCH&yrId=20196&yrId=20195&yrId=20194&yrId=20139&yrId=20138&yrId=20140&sf1Nm=price&sf2Dir=ASC&stkTypId=28881&PMmt=1-1-0&zc=92612&rd=99999&mdId=21906&mkId=20028&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=stkTypId-feedSegId-mkId-mdId&pgId=2102&rpp=250'
 p1
-aS'http://www.cars.com/for-sale/searchresults.action?PMmt=1-0-0&crSrtFlds=feedSegId-mkId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&mkId=20072&photoId=46724&mdId=21814&searchSource=GN_REFINEMENT'
-p2
-aS'http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=50&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=100000&mkId=20049&mdId=22159&yrId=58487&searchSource=GN_REFINEMENT'
-p3
 a.
