@@ -82,6 +82,7 @@ class dupont_spider (scrapy.Spider):
 			values = [x.strip().lower() for x in response.xpath ('//table[contains (@class, "simple-table modTable")]/tbody/tr/td/text()').extract()]
 			yr_mk_md = response.url.strip('http://www.dupontregistry.com/autos/listing/').split ('/')
 			scrapy.log.msg ("year_make_model_string (%s) scrapy error" %(str(yr_mk_md)))
+			scrapy.log.msg ("url (%s) scrapy error" %(response.url))
 			item['make'] = yr_mk_md[1].strip('').lower().replace ("--", " ").strip()
 			item['model'] = yr_mk_md[2].strip('').lower().replace ("--", " ").strip()
 
@@ -92,7 +93,7 @@ class dupont_spider (scrapy.Spider):
 					item['bodyType'] = x[1]
 			return item
 		except:
-			scrapy.log.msg ("url (%s) scrapy error" %(response.url), level=ERROR)
+			scrapy.log.msg ("url (%s) scrapy error" %(response.url))
 
 class ImagesSpider (scrapy.Spider):
 	name="cars"
