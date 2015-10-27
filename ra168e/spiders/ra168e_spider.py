@@ -24,6 +24,11 @@ global makes
 makes = [u'aston--martin', u'audi', u'bentley', u'bmw', u'bugatti', u'cadillac', u'ferrari', u'infiniti', u'jaguar', u'lamborghini', u'land--rover', u'lexus', u'lotus', u'maserati', u'mclaren', u'mercedes-benz', u'porsche', u'rolls-royce'
 ]
 
+dupont_small = [
+"http://www.dupontregistry.com/autos/results/ferrari/612/all/refine?pagenum=1&perpage=30&sort=price_desc&zipcode=92612&inv=false",
+"http://www.dupontregistry.com/autos/results/ferrari/456--gt,456--gta,456--m,550--barchetta,550--maranello,575--maranello,f355,f355--gts,f355--spider,f512--m,testarossa/all/refine?distance=0&pagenum=1&perpage=30&sort=price_desc&zipcode=92612&inv=false",
+"http://www.dupontregistry.com/autos/results/lotus/all/all/refine?pagenum=1&perpage=100&sort=price_desc&zipcode=92612&inv=false&distance=0"
+]
 def isfloat(value):
   try:
     float(value)
@@ -40,11 +45,14 @@ class dupont_spider (scrapy.Spider):
 		self.makes = list (set(pickle.load (open (self.pf_path + batch + '.p', 'rb' ) ) ) )
 
 	def start_requests(self):
-		request_list=[]
-		for make in self.makes:
-			index_url = 'http://www.dupontregistry.com/autos/results/%s/all/all/refine?distance=0&inv=false&pagenum=1&perpage=100&sort=price_desc' %(make)
-			request_list.append (scrapy.Request (index_url, callback=self.parse_first_page_listings))
-		return request_list
+		for x in dupont_small:
+			yield scrapy.Request (x, callback=self.parse_page, dont_filter=True)
+			
+		# request_list=[]
+		# for make in self.makes:
+		# 	index_url = 'http://www.dupontregistry.com/autos/results/%s/all/all/refine?distance=0&inv=false&pagenum=1&perpage=100&sort=price_desc' %(make)
+		# 	request_list.append (scrapy.Request (index_url, callback=self.parse_first_page_listings))
+		# return request_list
 
 	def parse_page_listings (self, response):
 		listing_page_urls = ['http://www.dupontregistry.com/autos/' + x.replace ('../../../../', '') for x in response.xpath ('//a[contains(@class, "car_title")]/@href').extract()]
@@ -52,12 +60,12 @@ class dupont_spider (scrapy.Spider):
 			if page_url not in urls_list:
 				yield scrapy.Request (page_url, callback=self.parse_page, dont_filter=True)
 
-	def parse_first_page_listings (self, response):
-		self.parse_page_listings (response)
-		last_page_num = [int(x) for x in response.xpath ('//ul[@class="paging"]/li/a/text()').extract() if x.isdigit()][-1]
-		for x in range (2, last_page_num + 1):
-			page_idx_url = response.url.replace ('pagenum=1', 'pagenum=%d'%(x))
-			yield scrapy.Request (page_idx_url, callback=self.parse_page_listings, dont_filter=True)
+	# def parse_first_page_listings (self, response):
+	# 	self.parse_page_listings (response)
+	# 	last_page_num = [int(x) for x in response.xpath ('//ul[@class="paging"]/li/a/text()').extract() if x.isdigit()][-1]
+	# 	for x in range (2, last_page_num + 1):
+	# 		page_idx_url = response.url.replace ('pagenum=1', 'pagenum=%d'%(x))
+	# 		yield scrapy.Request (page_idx_url, callback=self.parse_page_listings, dont_filter=True)
 
 
 	def parse_page (self, response):
