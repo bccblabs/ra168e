@@ -74,22 +74,25 @@ class dupont_spider (scrapy.Spider):
 
 
 	def parse_page (self, response):
-		item = vehicle_urls()
-		item['listing_url'] = response.url
-		item['image_urls'] = [ 'http://www.dupontregistry.com' + x for x in response.xpath ('//div[contains(@class="slideshow gallery-js-ready autorotation-disabled", @style="display: block; opacity: 0;")]/img/@src').extract() if '570' in x]
-		keys = [x.strip().lower() for x in response.xpath ('//table[contains (@class, "simple-table modTable")]/tbody/tr/th/text()').extract()]
-		values = [x.strip().lower() for x in response.xpath ('//table[contains (@class, "simple-table modTable")]/tbody/tr/td/text()').extract()]
-		yr_mk_md = response.url.strip('http://www.dupontregistry.com/autos/listing/').split ('/')
-		print yr_mk_md
-		item['make'] = yr_mk_md[1].strip('').lower().replace ("--", " ").strip()
-		item['model'] = yr_mk_md[2].strip('').lower().replace ("--", " ").strip()
+		try:
+			item = vehicle_urls()
+			item['listing_url'] = response.url
+			item['image_urls'] = [ 'http://www.dupontregistry.com' + x for x in response.xpath ('//div[contains(@class="slideshow gallery-js-ready autorotation-disabled", @style="display: block; opacity: 0;")]/img/@src').extract() if '570' in x]
+			keys = [x.strip().lower() for x in response.xpath ('//table[contains (@class, "simple-table modTable")]/tbody/tr/th/text()').extract()]
+			values = [x.strip().lower() for x in response.xpath ('//table[contains (@class, "simple-table modTable")]/tbody/tr/td/text()').extract()]
+			yr_mk_md = response.url.strip('http://www.dupontregistry.com/autos/listing/').split ('/')
+			scrapy.log.msg ("year_make_model_string (%s) scrapy error" %(str(yr_mk_md)))
+			item['make'] = yr_mk_md[1].strip('').lower().replace ("--", " ").strip()
+			item['model'] = yr_mk_md[2].strip('').lower().replace ("--", " ").strip()
 
-		for x in zip (keys, values):
-			if x[0] == 'year' and x[1].isdigit():
-				item['year'] = int (x[1])
-			if x[0] == 'body style':
-				item['bodyType'] = x[1]
-		return item
+			for x in zip (keys, values):
+				if x[0] == 'year' and x[1].isdigit():
+					item['year'] = int (x[1])
+				if x[0] == 'body style':
+					item['bodyType'] = x[1]
+			return item
+		except:
+			scrapy.log.msg ("url (%s) scrapy error" %(response.url), level=ERROR)
 
 class ImagesSpider (scrapy.Spider):
 	name="cars"
