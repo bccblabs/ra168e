@@ -51,7 +51,7 @@ class dupont_spider (scrapy.Spider):
 
 	def start_requests(self):
 		for x in dupont_small:
-			yield scrapy.Request (x, callback=self.parse_page, dont_filter=True)
+			yield scrapy.Request (x, callback=self.parse_page_listings, dont_filter=True)
 
 		# request_list=[]
 		# for make in self.makes:
