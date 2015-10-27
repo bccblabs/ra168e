@@ -1,52 +1,21 @@
-urls = [
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=100&photoId=46724&requestorTrackingInfo=RTB_SEARCH&yrId=20199&yrId=20198&yrId=20197&yrId=20144&yrId=20143&yrId=20142&yrId=20141&PMmt=1-1-0&zc=92612&rd=99999&mdId=22306&mkId=20021&searchSource=SORT_BLENDED&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&sf1Nm=actualPhotoCount&sf1Dir=DESC&sf2Nm=price&sf2Dir=DESC",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=100&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&mkId=20021&mdId=22306&photoId=46724&yrId=20194&yrId=20138&yrId=20193&yrId=20137&yrId=20192&yrId=20136&yrId=20191&yrId=20135&yrId=20190&yrId=20194&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=250&photoId=46724&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=21758&mkId=20089&sf1Dir=DESC&searchSource=GN_BREADCRUMB&crSrtFlds=feedSegId-mkId-mdId&pgId=2102",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&mkId=20089&mdId=21758&photoId=46724&yrId=20201&yrId=27381&yrId=20145&yrId=20201&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=51006&mkId=20075&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&rpp=250",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&photoId=46724&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=21404&mkId=20025&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&rpp=250",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&photoId=46724&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&yrId=20199&yrId=20197&yrId=20143&yrId=20142&sf1Nm=modelYear&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=21239&mkId=20070&sf1Dir=ASC&searchSource=UTILITY&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&rpp=250",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=22250&mkId=20088&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&rpp=250",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=51887&mkId=20075&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&rpp=250",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&photoId=46724&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=20891&mkId=20075&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&rpp=250",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=250&requestorTrackingInfo=RTB_SEARCH&PMmt=1-1-0&zc=92612&rd=99999&mdId=21933&mkId=20088&searchSource=SORT_BLENDED&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&sf1Nm=actualPhotoCount&sf1Dir=DESC&sf2Nm=price&sf2Dir=DESC",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=22101&mkId=20088&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&rpp=250",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&mkId=20088&mdId=22101&yrId=20200&yrId=20144&yrId=20199&yrId=20200&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&mkId=20088&mdId=22101&yrId=20196&yrId=20140&yrId=20141&yrId=20197&yrId=20142&yrId=20198&yrId=20196&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&stkTypId=28880&PMmt=1-1-0&zc=92612&rd=99999&mdId=21488&mkId=20073&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=stkTypId-feedSegId-mkId-mdId&pgId=2102&rpp=250",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=21920&mkId=20044&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&rpp=50",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=50&requestorTrackingInfo=RTB_SEARCH&stkTypId=28880&PMmt=1-1-0&zc=92612&rd=99999&mdId=22380&mkId=20044&searchSource=SORT_NEW&crSrtFlds=stkTypId-feedSegId-mkId-mdId&pgId=2102&sf1Nm=actualPhotoCount&sf1Dir=DESC&sf2Nm=price&sf2Dir=DESC",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=50&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&mkId=20012&mdId=20807&yrId=58487&yrId=56007&yrId=58487&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?stkTyp=U&tracktype=usedcc&mkId=20069&AmbMkId=20069&AmbMkNm=Lamborghini&make=Lamborghini&AmbMdId=20994&AmbMdNm=Diablo&model=Diablo&mdId=20994&rd=99999&zc=92612&searchSource=QUICK_FORM",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=stkTypId-feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=50&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&stkTypId=28881&mkId=20069&mdId=21195&yrId=51683&yrId=47272&yrId=39723&yrId=51683&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=250&requestorTrackingInfo=RTB_SEARCH&stkTypId=28881&PMmt=1-1-0&zc=92612&rd=99999&mdId=21824&mkId=20028&searchSource=SORT_USED&crSrtFlds=stkTypId-feedSegId-mkId-mdId&pgId=2102&sf1Nm=actualPhotoCount&sf1Dir=DESC&sf2Nm=price&sf2Dir=DESC",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&sf2Nm=miles&requestorTrackingInfo=RTB_SEARCH&sf1Nm=price&sf2Dir=ASC&stkTypId=28881&PMmt=1-13-0&zc=92612&rd=99999&mdId=20480&mdId=20492&mdId=51283&mdId=20489&mdId=20491&mdId=20490&mdId=22262&mdId=20501&mdId=20466&mdId=20446&mdId=20508&mdId=21117&mdId=20505&mkId=20014&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=stkTypId-feedSegId-mkId&pgId=2102&rpp=250",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=50&requestorTrackingInfo=RTB_SEARCH&stkTypId=28881&PMmt=1-1-0&zc=92612&rd=99999&mdId=21794&mkId=20073&searchSource=SORT_USED&crSrtFlds=stkTypId-feedSegId-mkId-mdId&pgId=2102&sf1Nm=modelYear&sf1Dir=DESC&sf2Nm=price&sf2Dir=DESC",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=price&sf2Dir=ASC&sf2Nm=miles&zc=92612&rd=99999&mkId=41703&mdId=41704&photoId=46724&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=stkTypId-feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=price&sf2Dir=ASC&sf2Nm=miles&zc=92612&rd=99999&stkTypId=28881&mkId=20028&mdId=20756&yrId=20201&yrId=20145&yrId=20200&yrId=20144&yrId=20199&yrId=20143&yrId=20198&yrId=20142&yrId=20197&yrId=20141&yrId=20196&yrId=20140&yrId=20201&photoId=46724&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=250&photoId=46724&sf2Nm=miles&requestorTrackingInfo=RTB_SEARCH&yrId=20199&yrId=20198&yrId=20197&yrId=20144&yrId=20196&yrId=20145&yrId=20143&yrId=20142&yrId=20141&yrId=20201&yrId=20140&yrId=20200&sf1Nm=price&sf2Dir=ASC&stkTypId=28881&PMmt=1-1-0&zc=92612&rd=99999&mdId=20756&mkId=20028&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=stkTypId-feedSegId-mkId-mdId&pgId=2102&rn=250",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=50&requestorTrackingInfo=RTB_SEARCH&stkTypId=28881&PMmt=1-1-0&zc=92612&rd=99999&mdId=22378&mkId=20005&searchSource=SORT_USED&crSrtFlds=stkTypId-feedSegId-mkId-mdId&pgId=2102&sf1Nm=actualPhotoCount&sf1Dir=DESC&sf2Nm=price&sf2Dir=DESC",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-2-0&crSrtFlds=stkTypId-feedSegId-mkId&feedSegId=28705&isDealerGrouping=false&rpp=50&sf1Dir=DESC&sf1Nm=price&sf2Dir=ASC&sf2Nm=miles&zc=92612&rd=99999&stkTypId=28881&mkId=20005&mdId=20562&mdId=20546&mdId=20562&photoId=46724&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=price&sf2Dir=ASC&sf2Nm=location&zc=92612&rd=99999&mkId=20028&mdId=57790&photoId=46724&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&yrId=51683&yrId=56007&yrId=47272&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=21249&mkId=20012&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&rpp=100",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&photoId=46724&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&yrId=20196&yrId=20135&yrId=20195&yrId=20194&yrId=20192&yrId=20139&yrId=20138&yrId=20137&yrId=20191&yrId=20141&yrId=20140&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=21249&mkId=20012&sf1Dir=DESC&searchSource=UTILITY&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&rpp=250",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-0-0&crSrtFlds=stkTypId-feedSegId-mkId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=price&sf2Dir=ASC&sf2Nm=miles&zc=92612&rd=99999&stkTypId=28881&mkId=20071&photoId=46724&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=50&photoId=46724&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&sf1Nm=actualPhotoCount&sf2Dir=DESC&PMmt=1-1-0&zc=92612&rd=99999&mdId=20758&mkId=20028&sf1Dir=DESC&searchSource=GN_BREADCRUMB&crSrtFlds=feedSegId-mkId-mdId&pgId=2102",
-"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=50&sf1Dir=DESC&sf1Nm=price&sf2Dir=ASC&sf2Nm=location&zc=92612&rd=99999&mkId=20028&mdId=21906&bsId=20203&yrId=20188&yrId=20133&yrId=20189&yrId=20190&yrId=20135&yrId=20191&yrId=20136&yrId=20138&yrId=20194&yrId=20139&yrId=20195&yrId=20188&searchSource=GN_REFINEMENT",
-"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=100&requestorTrackingInfo=RTB_SEARCH&yrId=20145&yrId=34923&yrId=27381&yrId=20201&PMmt=1-1-0&zc=92612&rd=99999&mdId=21930&mkId=20028&searchSource=SORT_BLENDED&crSrtFlds=feedSegId-mkId-mdId&pgId=2102&sf1Nm=actualPhotoCount&sf1Dir=DESC&sf2Nm=price&sf2Dir=DESC",
+urls = ["http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=250&photoId=46724&requestorTrackingInfo=RTB_SEARCH&yrId=20199&yrId=20198&yrId=20197&yrId=20143&yrId=20142&yrId=20141&stkTypId=28881&PMmt=1-1-0&zc=92612&rd=99999&mdId=21906&mkId=20028&searchSource=SORT_USED&crSrtFlds=stkTypId-feedSegId-mkId-mdId&pgId=2102&sf1Nm=actualPhotoCount&sf1Dir=DESC&sf2Nm=price&sf2Dir=DESC",
+"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=stkTypId-feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&stkTypId=28881&mkId=20028&mdId=21906&photoId=46724&yrId=20194&yrId=20139&yrId=20195&yrId=20140&yrId=20196&yrId=20194&searchSource=GN_REFINEMENT"
+"http://www.cars.com/for-sale/searchresults.action?PMmt=1-1-0&crSrtFlds=stkTypId-feedSegId-mkId-mdId&feedSegId=28705&isDealerGrouping=false&rpp=250&sf1Dir=DESC&sf1Nm=actualPhotoCount&sf2Dir=DESC&sf2Nm=price&zc=92612&rd=99999&stkTypId=28881&mkId=20028&mdId=21906&photoId=46724&yrId=20138&searchSource=GN_REFINEMENT",
+"http://www.cars.com/for-sale/searchresults.action?feedSegId=28705&rpp=250&photoId=46724&sf2Nm=price&requestorTrackingInfo=RTB_SEARCH&yrId=20193&sf1Nm=actualPhotoCount&sf2Dir=DESC&stkTypId=28881&PMmt=1-1-0&zc=92612&rd=99999&mdId=21906&mkId=20028&sf1Dir=DESC&searchSource=GN_BREADCRUMB&crSrtFlds=stkTypId-feedSegId-mkId-mdId&pgId=2102"
 ]
 
-# import pickle
 
-# batch_size = len(urls) / 7
-# for x in range(0, len(urls), batch_size):
-# 	sub_arr = urls[x:x+batch_size]
-# 	pickle.dump (sub_arr, open('urls_%d.p' %(x/batch_size), 'wb'))
+import pickle
 
-import glob, pickle
-test = []
-for x in glob.glob ('*.p'):
-	for y in pickle.load(open(x, 'rb')):
-		test.append (y)		
-print len (test)
-print set(urls).difference(set(test)) 
+batch_size = len(urls) / 1
+for x in range(0, len(urls), batch_size):
+	sub_arr = urls[x:x+batch_size]
+	pickle.dump (sub_arr, open('urls_%d.p' %(x/batch_size), 'wb'))
+
+# import glob, pickle
+# test = []
+# for x in glob.glob ('*.p'):
+# 	for y in pickle.load(open(x, 'rb')):
+# 		test.append (y)		
+# print len (test)
+# print set(urls).difference(set(test)) 
