@@ -80,6 +80,7 @@ class dupont_spider (scrapy.Spider):
 		keys = [x.strip().lower() for x in response.xpath ('//table[contains (@class, "simple-table modTable")]/tbody/tr/th/text()').extract()]
 		values = [x.strip().lower() for x in response.xpath ('//table[contains (@class, "simple-table modTable")]/tbody/tr/td/text()').extract()]
 		yr_mk_md = response.url.strip('http://www.dupontregistry.com/autos/listing/').split ('/')
+		print yr_mk_md
 		item['make'] = yr_mk_md[1].strip('').lower().replace ("--", " ").strip()
 		item['model'] = yr_mk_md[2].strip('').lower().replace ("--", " ").strip()
 
