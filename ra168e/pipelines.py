@@ -35,7 +35,7 @@ class DownloadClassifyPipeline (ImagesPipeline):
 			res = c0.predict ([resized_image])
 			clz = np.argmax(res[0])
 			print clz
-			if consec_int > 10000:
+			if consec_int > 3:
 				break
 			elif clz > 0:
 				consec_int = consec_int + 1
