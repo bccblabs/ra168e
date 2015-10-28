@@ -9,7 +9,7 @@ mongo_port = 27017
 
 client = MongoClient(mongo_host_name, mongo_port)
 
-model_stats_db = client['cars']
+model_stats_db = client['pure_images9']
 model_stats_coll = model_stats_db.urls
 
 uploaded_db = client['upload_set']
