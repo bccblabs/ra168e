@@ -10,7 +10,7 @@ sys.path.insert (0, caffe_root + "/python")
 import caffe
 import numpy as np
 caffe.set_mode_gpu()
-caffe.set_device_id (0)
+caffe.set_device (0)
 
 blob = caffe.proto.caffe_pb2.BlobProto()
 c0 = caffe.Classifier (
