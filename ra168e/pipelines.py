@@ -14,8 +14,8 @@ caffe.set_device (0)
 
 blob = caffe.proto.caffe_pb2.BlobProto()
 c0 = caffe.Classifier (
-                caffe_root + "models/ext_int/gnet_deploy.prototxt",
-                caffe_root + "models/ext_int/gnet_pre.caffemodel",
+                caffe_root + "models/trained/gnet_deploy.prototxt",
+                caffe_root + "models/trained/gnet_pre.caffemodel",
                 channel_swap = (2,1,0),
                 raw_scale = 255,
                 image_dims = (256, 256)
