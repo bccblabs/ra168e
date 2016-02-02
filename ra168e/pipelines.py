@@ -9,7 +9,9 @@ images_root = "/home/ubuntu/pure_images6/"
 sys.path.insert (0, caffe_root + "/python")
 import caffe
 import numpy as np
-caffe.set_mode_cpu()
+caffe.set_mode_gpu()
+caffe.set_device_id (0)
+
 blob = caffe.proto.caffe_pb2.BlobProto()
 c0 = caffe.Classifier (
                 caffe_root + "models/ext_int/gnet_deploy.prototxt",
