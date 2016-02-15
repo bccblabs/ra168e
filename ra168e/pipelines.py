@@ -4,7 +4,7 @@ from scrapy.pipelines.images import ImagesPipeline
 import numpy as np
 import sys, glob
 caffe_root = "/home/ubuntu/caffe/"
-images_root = "/home/ubuntu/pure_images6/"
+images_root = "/home/ubuntu/pure_images7/"
 
 sys.path.insert (0, caffe_root + "/python")
 import caffe
