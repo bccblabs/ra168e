@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/usr/local/bin/scrapy", line 9, in <module>
+    load_entry_point('Scrapy==1.0.1', 'console_scripts', 'scrapy')()
+  File "/Library/Python/2.7/site-packages/scrapy/cmdline.py", line 143, in execute
+    _run_print_help(parser, _run_command, cmd, args, opts)
+  File "/Library/Python/2.7/site-packages/scrapy/cmdline.py", line 89, in _run_print_help
+    func(*a, **kw)
+  File "/Library/Python/2.7/site-packages/scrapy/cmdline.py", line 150, in _run_command
+    cmd.run(args, opts)
+  File "/Library/Python/2.7/site-packages/scrapy/commands/crawl.py", line 57, in run
+    self.crawler_process.crawl(spname, **opts.spargs)
+  File "/Library/Python/2.7/site-packages/scrapy/crawler.py", line 150, in crawl
+    crawler = self._create_crawler(crawler_or_spidercls)
+  File "/Library/Python/2.7/site-packages/scrapy/crawler.py", line 165, in _create_crawler
+    spidercls = self.spider_loader.load(spidercls)
+  File "/Library/Python/2.7/site-packages/scrapy/spiderloader.py", line 40, in load
+    raise KeyError("Spider not found: {}".format(spider_name))
+KeyError: 'Spider not found: odi'

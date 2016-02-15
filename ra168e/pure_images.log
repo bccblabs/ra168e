@@ -150,3 +150,6 @@ KeyError: 'vehicle_urls does not support field: ext'
 2015-10-09 02:36:01 [scrapy] INFO: Crawled 38 pages (at 25 pages/min), scraped 2 items (at 1 items/min)
 2015-10-09 02:37:27 [scrapy] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
 2015-10-09 02:37:38 [scrapy] INFO: Received SIGTERM twice, forcing unclean shutdown
+2016-02-11 00:31:26 [scrapy] INFO: Scrapy 1.0.1 started (bot: ra168e)
+2016-02-11 00:31:26 [scrapy] INFO: Optional features available: ssl, http11
+2016-02-11 00:31:26 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'ra168e.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 5, 'SPIDER_MODULES': ['ra168e.spiders'], 'BOT_NAME': 'ra168e', 'LOG_FILE': 'pure_images.log', 'DOWNLOAD_DELAY': 1}
