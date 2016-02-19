@@ -30,7 +30,7 @@ class edmunds_spider (scrapy.Spider):
 
 		styleidList = styleids_coll.distinct ('styleId')
 
-		for x in zipcode_coll.find ({'city': {"$regex": "NY"}}):
+		for x in zipcode_coll.find ({'city': {"$regex": "FL"}}):
 			for y in styleidList:
 				listing_url = self.edmunds_listings_endpoint + str(y)
 				formated_url = "{0}?zipcode={1}&radius=25&pagenum=1&pagesize=50&view=full&fmt=json".format (listing_url, x['zipcode'])
